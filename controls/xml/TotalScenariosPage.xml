@@ -1,0 +1,14 @@
+<Application>
+  <TotalScenariosPage>
+    <createScenario using="xpath" value="//button[@label='Create']">
+    </createScenario>
+    <searchScenarioBox using="id" value="in">
+    </searchScenarioBox>
+    <deleteScenario using="xpath" value="//span[text()='Delete']/preceding-sibling::span[contains(@class,'fa-trash')]/parent::button">
+    </deleteScenario>
+    <applyButton using="xpath" value="//div[@class='sectionButton']//*[text()='Apply']/parent::button">
+    </applyButton>
+    <scenarioCheckBox value="//a/span[text()='%s']/ancestor::td/preceding-sibling::td[@class='ui-selection-column']/p-dtcheckbox/div/div[contains(@class,'ui-chkbox-box')]">
+    </scenarioCheckBox>
+  </TotalScenariosPage>
+</Application>

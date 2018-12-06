@@ -1,0 +1,9 @@
+Composite: Then do everything
+Then say Hello
+Then say Bye
+
+Composite: When login with username $username and password $userpass
+Then sendkeys <username> for element userNameTextBox - EnterUserName - Login
+Then sendkeys <userpass> for element userPasswordTextBox - EnterUserPass - Login
+Then submit element loginButton - ClickLoginButton - Login
+

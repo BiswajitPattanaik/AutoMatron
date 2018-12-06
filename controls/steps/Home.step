@@ -1,0 +1,8 @@
+Composite: Then home page login name should be $username
+Then assert text <username> for element loginUserNameLabel - CheckUserName - Home
+
+Composite: Given create a scenario with name $scenario_name project $project_name subproject $sub_project_name
+Then click element totalScenariosCard - ClickTotalScenario - Home
+Then click element createScenario - ClickCreateScenario - TotalScenariosPage
+Then select <project_name> for element projectSelectorSelect - SelectProject - CreateScenarioCard
+Then select <sub_project_name> for element subProjectSelectorSelect - SelectProject - CreateScenarioCard

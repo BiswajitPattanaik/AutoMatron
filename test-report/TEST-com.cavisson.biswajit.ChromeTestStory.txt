@@ -1,0 +1,103 @@
+Testsuite: com.cavisson.biswajit.ChromeTestStory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.663 sec
+------------- Standard Output ---------------
+Inside the log
+The test property for testcase is SimpleCreateScenario
+./testcases/SimpleCreateScenario/test_case.conf
+The test property for Story StoryFile is chrome_test_login.story
+./controls/Models.txt
+************** Found A Composite file ************
+##### ./controls/steps/Login.step ########
+************** Found A Composite file ************
+##### ./controls/steps/Home.step ########
+##### ./controls/steps/TotalScenariosPage.step ########
+##### ./controls/steps/CreateScenarioCard.step ########
+##### ./controls/steps/ScenarioUiPage.step ########
+##### ./controls/steps/GroupAddCard.step ########
+[./controls/steps/Login.step, ./controls/steps/Home.step]
+Inside the log
+The test property for testcase is SimpleCreateScenario
+./testcases/SimpleCreateScenario/test_case.conf
+The test property for Story StoryFile is chrome_test_login.story
+./controls/Models.txt
+************** Found A Composite file ************
+##### ./controls/steps/Login.step ########
+************** Found A Composite file ************
+##### ./controls/steps/Home.step ########
+##### ./controls/steps/TotalScenariosPage.step ########
+##### ./controls/steps/CreateScenarioCard.step ########
+##### ./controls/steps/ScenarioUiPage.step ########
+##### ./controls/steps/GroupAddCard.step ########
+[./controls/steps/Login.step, ./controls/steps/Home.step]
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeouts=600,threads=1,failOnStoryTimeout=false]
+
+(BeforeStories)
+
+Running story ./testcases/SimpleCreateScenario/chrome_test_login.story
+
+(./testcases/SimpleCreateScenario/chrome_test_login.story)
+Scenario: 
+Examples:
+Given a chrometest with testcaseName firstTest
+And open Netstorm ProductUI for http://10.10.30.106
+When login with username <username> and password <userpass>
+Then home page login name should be <username>
+Given create a scenario with name <scenario_name> project <project_name> subproject <sub_project_name>
+Then quit chrometest
+
+|username|userpass|scenario_name|project_name|sub_project_name|groupname|script_name|
+|aditya|cavisson|new_netstorm_test1|default|default|Group1|hpd_tours|
+
+Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test1, project_name=default, sub_project_name=default, groupname=Group1, script_name=hpd_tours}
+test case name = firstTest
+The test 4j property for executableBinary is /opt/google/chrome/google-chrome
+The test 4j property for baseDir is /home/netstorm/biswajit/AutomaTron
+The test 4j property for driverPath is chromedriver
+Using timeout for story chrome_test_login.story of 600 secs.
+***********************************Capabilities {browserName: chrome}***********************
+Given a chrometest with testcaseName firstTest
+And open Netstorm ProductUI for http://10.10.30.106
+When login with username aditya and password cavisson
+Then sendkeys aditya for element userNameTextBox - EnterUserName - Login
+Then sendkeys cavisson for element userPasswordTextBox - EnterUserPass - Login
+Initial wait started
+Initial wait is over
+going to capture screenshot
+Completed capture screenshot
+Secondary wait started
+Secondary wait Completed
+Then submit element loginButton - ClickLoginButton - Login
+Then home page login name should be aditya
+Inside assert aditya
+Then assert text aditya for element loginUserNameLabel - CheckUserName - Home
+Given create a scenario with name new_netstorm_test1 project default subproject default
+Then click element totalScenariosCard - ClickTotalScenario - Home
+Then click element createScenario - ClickCreateScenario - TotalScenariosPage
+Inside assert 
+Then select default for element projectSelectorSelect - SelectProject - CreateScenarioCard
+Inside assert 
+Then select default for element subProjectSelectorSelect - SelectProject - CreateScenarioCard
+Then quit chrometest
+
+
+
+
+(AfterStories)
+
+Generating reports view to '/home/netstorm/biswajit/AutomaTron/target/jbehave-report' using formats '[stats, html, console]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 4 stories (of which 2 pending) containing 3 scenarios (of which 2 pending)
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Dec 05, 2018 9:10:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d) on port 1024
+Only local connections are allowed.
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Dec 05, 2018 9:10:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+------------- ---------------- ---------------
+
+Testcase: run took 22.495 sec

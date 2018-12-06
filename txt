@@ -1,0 +1,7 @@
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeouts=300,threads=1,failOnStoryTimeout=false]
+
+
+
+Using controls EmbedderControls[batch=false,skip=true,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=true,verboseFiltering=true,storyTimeouts=600,threads=1,failOnStoryTimeout=false]
+Skipped stories []
+

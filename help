@@ -1,0 +1,3 @@
+To start test use this command .
+
+ant -DsuiteName=<Test Suite Name From Smoke> start-test 

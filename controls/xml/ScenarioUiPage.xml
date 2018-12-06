@@ -1,0 +1,10 @@
+<Application>
+  <ScenarioUiPage>
+    <addGroupButton using="xpath" value="//button[@title='Add Group']">
+    </addGroupButton>
+    <openScenarioBtn using="xpath" value="//md-icon[contains(@class,'produi-icon-scenario')]">
+    </openScenarioBtn>
+    <saveScenarioBtn using="xpath" value="//span[contains(@class,'fa-save')]/parent::button">
+    </saveScenarioBtn>
+  </ScenarioUiPage>
+</Application>
