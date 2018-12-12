@@ -34,8 +34,12 @@
 <div class="step successful">Given create a scenario with name <span class="step parameter">new_netstorm_test1</span> project <span class="step parameter">default</span> subproject <span class="step parameter">default</span></div>
 <div class="step successful">Then click element <span class="step parameter">totalScenariosCard</span> - <span class="step parameter">ClickTotalScenario</span> - <span class="step parameter">Home</span></div>
 <div class="step successful">Then click element <span class="step parameter">createScenario</span> - <span class="step parameter">ClickCreateScenario</span> - <span class="step parameter">TotalScenariosPage</span></div>
-<div class="step successful">Then select <span class="step parameter">default</span> for element <span class="step parameter">projectSelectorSelect</span> - <span class="step parameter">SelectProject</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then select <span class="step parameter">default</span> for element <span class="step parameter">subProjectSelectorSelect</span> - <span class="step parameter">SelectProject</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">projectSelector</span> - <span class="step parameter">ClickProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element projectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">subProjectSelector</span> - <span class="step parameter">ClickSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element subProjectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">new_netstorm_test1</span> for element <span class="step parameter">scenarioNameTextBox</span> - <span class="step parameter">EnterScenarioName</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then submit element <span class="step parameter">createScenarioNextBtn</span> - <span class="step parameter">ClickOnNextForCreateScenario</span> - <span class="step parameter">CreateScenarioCard</span></div>
 <div class="step successful">Then quit chrometest</div>
 </div>
 </div>

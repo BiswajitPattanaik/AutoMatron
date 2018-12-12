@@ -1,0 +1,2288 @@
+[1544105248.243][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND InitSession {
+   "capabilities": {
+      "desiredCapabilities": {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "binary": "/opt/google/chrome/google-chrome",
+            "extensions": [  ]
+         },
+         "platform": "ANY",
+         "version": ""
+      },
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "binary": "/opt/google/chrome/google-chrome",
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "binary": "/opt/google/chrome/google-chrome",
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1544105248.243][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1544105248.243][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1544105248.243][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-geolocation --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.ljr254/internal --log-level=0 --metrics-recording-only --no-first-run --no-sandbox --password-store=basic --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.0i13Mg --window-size=1368x720 data:,
+[1544105248.804][INFO]: resolved localhost to ["127.0.0.1"]
+[1544105248.827][INFO]: resolved localhost to ["127.0.0.1"]
+[1544105248.910][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE InitSession {
+   "acceptInsecureCerts": true,
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.0i13Mg"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:23899"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "~~~": "..."
+}
+[1544105249.145][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105249.145][INFO]: Waiting for pending navigations...
+[1544105249.165][INFO]: Done waiting for pending navigations. Status: ok
+[1544105249.177][INFO]: Waiting for pending navigations...
+[1544105249.181][INFO]: Done waiting for pending navigations. Status: ok
+[1544105249.181][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105249.189][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Navigate {
+   "url": "http://10.10.30.106"
+}
+[1544105249.189][INFO]: Waiting for pending navigations...
+[1544105249.190][INFO]: Done waiting for pending navigations. Status: ok
+[1544105250.700][INFO]: Waiting for pending navigations...
+[1544105253.244][INFO]: Done waiting for pending navigations. Status: ok
+[1544105253.244][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Navigate
+[1544105253.252][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105253.252][INFO]: Waiting for pending navigations...
+[1544105253.264][INFO]: Done waiting for pending navigations. Status: ok
+[1544105253.270][INFO]: Waiting for pending navigations...
+[1544105253.270][INFO]: Done waiting for pending navigations. Status: ok
+[1544105253.270][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105253.275][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105253.275][INFO]: Waiting for pending navigations...
+[1544105253.276][INFO]: Done waiting for pending navigations. Status: ok
+[1544105253.276][INFO]: Waiting for pending navigations...
+[1544105253.276][INFO]: Done waiting for pending navigations. Status: ok
+[1544105253.276][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105253.284][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105253.285][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105253.789][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105253.790][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105254.294][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105254.295][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105254.302][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105254.302][INFO]: Waiting for pending navigations...
+[1544105254.302][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.784][INFO]: Waiting for pending navigations...
+[1544105254.785][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.785][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9aZIkyY4m9gHqkVWvm9MzQsoI78DD8Fa8LClCjsj0667KcAP4A4AqdDF38y2WqkRKpLubqekKxW5Q+j/+z/9L//znf4CKQs9n8ImgAgCEI6Cqq6sgUgAFYAbRCUQEcAFxAZUf9Y9xQ..."
+[1544105254.929][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "name",
+   "value": "name"
+}
+[1544105254.929][INFO]: Waiting for pending navigations...
+[1544105254.929][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.946][INFO]: Waiting for pending navigations...
+[1544105254.947][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.947][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-1"
+}
+[1544105254.955][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105254.956][INFO]: Waiting for pending navigations...
+[1544105254.956][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.958][INFO]: Waiting for pending navigations...
+[1544105254.958][INFO]: Done waiting for pending navigations. Status: ok
+[1544105254.958][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105254.963][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClearElement {
+   "id": "0.24228670975380973-1"
+}
+[1544105254.963][INFO]: Waiting for pending navigations...
+[1544105254.964][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.005][INFO]: Waiting for pending navigations...
+[1544105255.005][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.005][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClearElement
+[1544105255.009][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND TypeElement {
+   "id": "0.24228670975380973-1",
+   "value": [ "aditya" ]
+}
+[1544105255.009][INFO]: Waiting for pending navigations...
+[1544105255.010][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.082][INFO]: Waiting for pending navigations...
+[1544105255.082][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.082][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE TypeElement
+[1544105255.087][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105255.087][INFO]: Waiting for pending navigations...
+[1544105255.088][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.090][INFO]: Waiting for pending navigations...
+[1544105255.090][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.090][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105255.093][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105255.093][INFO]: Waiting for pending navigations...
+[1544105255.094][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.094][INFO]: Waiting for pending navigations...
+[1544105255.094][INFO]: Done waiting for pending navigations. Status: ok
+[1544105255.094][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105255.100][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105255.102][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105255.605][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105255.606][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105256.112][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105256.113][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105256.117][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105256.117][INFO]: Waiting for pending navigations...
+[1544105256.117][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.590][INFO]: Waiting for pending navigations...
+[1544105256.590][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.591][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9aZIkyY4m9gHqkVWvm9MzQsoI78DD8Fa8LClCjsj0667KcAP4A4AqdDF38y2WqkRKpLubqekKxW5Q+j/+z/9L//znf4CKQs9n8ImgAgCEI6Cqq6sgUgAFYAbRCUQEcAFxAZUf9Y9xQ..."
+[1544105256.720][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "name",
+   "value": "password"
+}
+[1544105256.720][INFO]: Waiting for pending navigations...
+[1544105256.721][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.755][INFO]: Waiting for pending navigations...
+[1544105256.756][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.756][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-2"
+}
+[1544105256.760][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105256.760][INFO]: Waiting for pending navigations...
+[1544105256.761][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.772][INFO]: Waiting for pending navigations...
+[1544105256.773][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.773][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105256.777][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClearElement {
+   "id": "0.24228670975380973-2"
+}
+[1544105256.777][INFO]: Waiting for pending navigations...
+[1544105256.778][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.824][INFO]: Waiting for pending navigations...
+[1544105256.825][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.825][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClearElement
+[1544105256.828][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND TypeElement {
+   "id": "0.24228670975380973-2",
+   "value": [ "cavisson" ]
+}
+[1544105256.828][INFO]: Waiting for pending navigations...
+[1544105256.829][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.910][INFO]: Waiting for pending navigations...
+[1544105256.911][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.911][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE TypeElement
+[1544105256.914][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105256.914][INFO]: Waiting for pending navigations...
+[1544105256.915][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.917][INFO]: Waiting for pending navigations...
+[1544105256.920][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.920][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105256.924][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105256.924][INFO]: Waiting for pending navigations...
+[1544105256.925][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.925][INFO]: Waiting for pending navigations...
+[1544105256.926][INFO]: Done waiting for pending navigations. Status: ok
+[1544105256.926][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105256.929][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105256.930][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105257.433][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105257.434][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105257.937][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105257.938][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105257.941][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105257.941][INFO]: Waiting for pending navigations...
+[1544105257.942][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.415][INFO]: Waiting for pending navigations...
+[1544105258.416][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.416][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9aZIkyY4m9gHqkVWvm9MzQsoI78DD8Fa8LClCjsj0667KcAP4A4AqdDF38y2WqkRKpLubqekKxW5Q+j/+z/9L//znf4CKQs9n8ImgAgCEI6Cqq6sgUgAFYAbRCUQEcAFxAZUf9Y9xQ..."
+[1544105258.472][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "id",
+   "value": "login-button"
+}
+[1544105258.472][INFO]: Waiting for pending navigations...
+[1544105258.472][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.489][INFO]: Waiting for pending navigations...
+[1544105258.489][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.489][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-3"
+}
+[1544105258.492][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetUrl {
+
+}
+[1544105258.492][INFO]: Waiting for pending navigations...
+[1544105258.493][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.495][INFO]: Waiting for pending navigations...
+[1544105258.495][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.495][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetUrl "http://10.10.30.106/ProductUI/#/login"
+[1544105258.503][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105258.503][INFO]: Waiting for pending navigations...
+[1544105258.504][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.505][INFO]: Waiting for pending navigations...
+[1544105258.506][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.506][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105258.509][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-3"
+}
+[1544105258.509][INFO]: Waiting for pending navigations...
+[1544105258.509][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.600][INFO]: Waiting for pending navigations...
+[1544105258.602][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.602][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105258.608][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105258.608][INFO]: Waiting for pending navigations...
+[1544105258.611][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.611][INFO]: Waiting for pending navigations...
+[1544105258.612][INFO]: Done waiting for pending navigations. Status: ok
+[1544105258.612][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105258.619][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105258.621][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105259.127][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105259.127][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105259.631][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105259.632][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105259.636][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105259.638][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot ERROR unexpected alert open: {Alert text : There is already one session running with the same user. Click Ok to forcefully logout other session and login}
+  (Session info: chrome=70.0.3538.110)
+[1544105259.653][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetAlertMessage {
+
+}
+[1544105259.653][INFO]: Waiting for pending navigations...
+[1544105259.654][INFO]: Done waiting for pending navigations. Status: unexpected alert open
+[1544105259.654][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetAlertMessage "There is already one session running with the same user. Click Ok to forcefully logout other session and login"
+[1544105259.659][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND AcceptAlert {
+
+}
+[1544105259.659][INFO]: Waiting for pending navigations...
+[1544105259.661][INFO]: Done waiting for pending navigations. Status: unexpected alert open
+[1544105259.662][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE AcceptAlert
+[1544105259.680][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-3"
+}
+[1544105259.680][INFO]: Waiting for pending navigations...
+[1544105259.686][INFO]: Done waiting for pending navigations. Status: ok
+[1544105259.704][INFO]: Waiting for pending navigations...
+[1544105259.705][INFO]: Done waiting for pending navigations. Status: ok
+[1544105259.705][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled false
+[1544105259.711][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105259.711][INFO]: Waiting for pending navigations...
+[1544105259.712][INFO]: Done waiting for pending navigations. Status: ok
+[1544105259.712][INFO]: Waiting for pending navigations...
+[1544105259.713][INFO]: Done waiting for pending navigations. Status: ok
+[1544105259.713][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105259.716][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105259.717][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105260.221][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105260.226][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105260.729][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105260.730][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105260.736][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105260.756][INFO]: Waiting for pending navigations...
+[1544105260.924][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.553][INFO]: Waiting for pending navigations...
+[1544105261.555][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.556][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOydeZwcVbn3v6equ2fLTCYrMCFkIZAFyAIkYQlBdnIJ4AVlUfEVUAleEQEVvIK+CheBKygXroDK8l6UCyKyiARBQJDFhEgIkD1kATIhyUAmmUwyS3ed94/aq091V013z3SS/uWTZKbqb..."
+[1544105261.580][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]"
+}
+[1544105261.580][INFO]: Waiting for pending navigations...
+[1544105261.587][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.614][INFO]: Waiting for pending navigations...
+[1544105261.622][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.622][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-4"
+}
+[1544105261.633][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105261.633][INFO]: Waiting for pending navigations...
+[1544105261.641][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.646][INFO]: Waiting for pending navigations...
+[1544105261.647][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.647][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105261.650][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetElementText {
+   "id": "0.24228670975380973-4"
+}
+[1544105261.650][INFO]: Waiting for pending navigations...
+[1544105261.654][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.683][INFO]: Waiting for pending navigations...
+[1544105261.688][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.688][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetElementText "aditya"
+[1544105261.691][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetElementText {
+   "id": "0.24228670975380973-4"
+}
+[1544105261.691][INFO]: Waiting for pending navigations...
+[1544105261.698][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.708][INFO]: Waiting for pending navigations...
+[1544105261.712][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.712][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetElementText "aditya"
+[1544105261.719][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105261.719][INFO]: Waiting for pending navigations...
+[1544105261.729][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.746][INFO]: Waiting for pending navigations...
+[1544105261.757][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.757][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105261.760][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105261.761][INFO]: Waiting for pending navigations...
+[1544105261.763][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.763][INFO]: Waiting for pending navigations...
+[1544105261.764][INFO]: Done waiting for pending navigations. Status: ok
+[1544105261.764][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105261.773][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105261.773][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105262.279][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105262.281][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105262.784][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105262.785][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105262.788][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105262.788][INFO]: Waiting for pending navigations...
+[1544105262.788][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.933][INFO]: Waiting for pending navigations...
+[1544105262.934][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.934][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOydeZwU1bn3v6equ2djhgEH1EFkEWVRWQyLC2Lc5YqaaOKSxNyoSdTcGKMm0dxo8iZ6jXrVxKs3LonLjYnRGOMSI0ajRqMSEEVUdmQRAYERBoaBWbrrvH/U3n2qu6qXmQb6xweYqTrLU..."
+[1544105262.956][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//md-card[contains(@class,'totalScenarioCard')]"
+}
+[1544105262.956][INFO]: Waiting for pending navigations...
+[1544105262.956][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.978][INFO]: Waiting for pending navigations...
+[1544105262.979][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.979][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-5"
+}
+[1544105262.985][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-5",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-5"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105262.985][INFO]: Waiting for pending navigations...
+[1544105262.986][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.989][INFO]: Waiting for pending navigations...
+[1544105262.991][INFO]: Done waiting for pending navigations. Status: ok
+[1544105262.991][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105262.996][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105262.996][INFO]: Waiting for pending navigations...
+[1544105262.998][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.000][INFO]: Waiting for pending navigations...
+[1544105263.001][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.001][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105263.010][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-5"
+}
+[1544105263.010][INFO]: Waiting for pending navigations...
+[1544105263.011][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.031][INFO]: Waiting for pending navigations...
+[1544105263.031][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.031][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105263.034][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-5"
+}
+[1544105263.034][INFO]: Waiting for pending navigations...
+[1544105263.035][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.046][INFO]: Waiting for pending navigations...
+[1544105263.047][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.047][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105263.051][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-5"
+}
+[1544105263.051][INFO]: Waiting for pending navigations...
+[1544105263.053][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.374][INFO]: Waiting for pending navigations...
+[1544105263.531][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.531][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105263.535][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105263.535][INFO]: Waiting for pending navigations...
+[1544105263.553][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.560][INFO]: Waiting for pending navigations...
+[1544105263.561][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.561][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105263.574][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105263.574][INFO]: Waiting for pending navigations...
+[1544105263.588][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.588][INFO]: Waiting for pending navigations...
+[1544105263.592][INFO]: Done waiting for pending navigations. Status: ok
+[1544105263.592][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105263.597][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105263.598][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105264.102][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105264.102][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105264.606][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105264.606][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105264.610][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105264.610][INFO]: Waiting for pending navigations...
+[1544105264.611][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.750][INFO]: Waiting for pending navigations...
+[1544105264.751][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.751][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOyde5xWVb3/32vv5zJ3BpxBHUQuKjeNixe8IZR3jqaeLLWLndRKupiplXbS+hWeSivLY2V2Sj1RHq0oUxPT1DQvgXgBFRAURGFQGGVgGJh5Lnv9/tj3/az9PHvP8zwzA86HFzCz97rtd..."
+[1544105264.773][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@label='Create']"
+}
+[1544105264.773][INFO]: Waiting for pending navigations...
+[1544105264.773][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.789][INFO]: Waiting for pending navigations...
+[1544105264.790][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.790][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-6"
+}
+[1544105264.793][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-6",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-6"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105264.793][INFO]: Waiting for pending navigations...
+[1544105264.794][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.797][INFO]: Waiting for pending navigations...
+[1544105264.798][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.798][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105264.801][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105264.801][INFO]: Waiting for pending navigations...
+[1544105264.803][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.805][INFO]: Waiting for pending navigations...
+[1544105264.806][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.806][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105264.808][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-6"
+}
+[1544105264.808][INFO]: Waiting for pending navigations...
+[1544105264.809][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.824][INFO]: Waiting for pending navigations...
+[1544105264.832][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.832][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105264.835][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-6"
+}
+[1544105264.835][INFO]: Waiting for pending navigations...
+[1544105264.836][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.847][INFO]: Waiting for pending navigations...
+[1544105264.848][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.848][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105264.851][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-6"
+}
+[1544105264.851][INFO]: Waiting for pending navigations...
+[1544105264.851][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.970][INFO]: Waiting for pending navigations...
+[1544105264.978][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.978][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105264.982][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105264.982][INFO]: Waiting for pending navigations...
+[1544105264.983][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.986][INFO]: Waiting for pending navigations...
+[1544105264.986][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.987][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105264.991][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105264.991][INFO]: Waiting for pending navigations...
+[1544105264.992][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.992][INFO]: Waiting for pending navigations...
+[1544105264.993][INFO]: Done waiting for pending navigations. Status: ok
+[1544105264.993][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105264.997][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105264.998][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105265.501][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105265.502][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105266.005][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105266.006][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105266.009][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105266.009][INFO]: Waiting for pending navigations...
+[1544105266.011][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.182][INFO]: Waiting for pending navigations...
+[1544105266.183][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.183][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eXQd153f+blVD3gACJAgwQUgAe6guEmUKVGiRe2WWorl2JYtj9XT7XSnu8dJJj2TZSYnSXfOTGeSziSnJzNzkh6fzHSSdnfU3XZ7ke2YttSUZe2iTJESJZLivoIkAAIkQIDY3qu68..."
+[1544105266.213][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1544105266.213][INFO]: Waiting for pending navigations...
+[1544105266.215][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.247][INFO]: Waiting for pending navigations...
+[1544105266.247][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.248][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-7"
+}
+[1544105266.251][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-7",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-7"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105266.251][INFO]: Waiting for pending navigations...
+[1544105266.252][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.255][INFO]: Waiting for pending navigations...
+[1544105266.256][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.256][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105266.259][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105266.260][INFO]: Waiting for pending navigations...
+[1544105266.260][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.262][INFO]: Waiting for pending navigations...
+[1544105266.263][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.263][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105266.266][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-7"
+}
+[1544105266.266][INFO]: Waiting for pending navigations...
+[1544105266.267][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.288][INFO]: Waiting for pending navigations...
+[1544105266.288][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.288][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105266.291][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-7"
+}
+[1544105266.292][INFO]: Waiting for pending navigations...
+[1544105266.292][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.305][INFO]: Waiting for pending navigations...
+[1544105266.306][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.306][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105266.309][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-7"
+}
+[1544105266.309][INFO]: Waiting for pending navigations...
+[1544105266.310][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.416][INFO]: Waiting for pending navigations...
+[1544105266.426][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.426][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105266.430][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105266.430][INFO]: Waiting for pending navigations...
+[1544105266.431][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.434][INFO]: Waiting for pending navigations...
+[1544105266.435][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.435][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105266.440][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105266.440][INFO]: Waiting for pending navigations...
+[1544105266.442][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.442][INFO]: Waiting for pending navigations...
+[1544105266.443][INFO]: Done waiting for pending navigations. Status: ok
+[1544105266.443][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105266.447][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105266.447][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105266.951][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105266.951][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105267.455][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105267.455][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105267.459][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105267.459][INFO]: Waiting for pending navigations...
+[1544105267.460][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.593][INFO]: Waiting for pending navigations...
+[1544105267.594][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.594][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eZQd133f+blV9XpDN9BAY+kGurERDWIjQIIECREkIVKkyYiyJFrUET22Isf2KMnEM1kmOUnsnIkzsTPJ8Sw5iUdnZhzHskLbUrRQYgSJNCiKO0GBAAkSALGvDaC70Q000I3e3qu68..."
+[1544105267.619][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']"
+}
+[1544105267.619][INFO]: Waiting for pending navigations...
+[1544105267.620][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.637][INFO]: Waiting for pending navigations...
+[1544105267.638][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.638][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-8"
+}
+[1544105267.641][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-8",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-8"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105267.641][INFO]: Waiting for pending navigations...
+[1544105267.641][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.646][INFO]: Waiting for pending navigations...
+[1544105267.647][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.647][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105267.651][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105267.651][INFO]: Waiting for pending navigations...
+[1544105267.651][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.653][INFO]: Waiting for pending navigations...
+[1544105267.653][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.653][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105267.656][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-8"
+}
+[1544105267.656][INFO]: Waiting for pending navigations...
+[1544105267.657][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.671][INFO]: Waiting for pending navigations...
+[1544105267.671][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.671][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105267.674][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-8"
+}
+[1544105267.674][INFO]: Waiting for pending navigations...
+[1544105267.674][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.683][INFO]: Waiting for pending navigations...
+[1544105267.684][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.684][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105267.687][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-8"
+}
+[1544105267.687][INFO]: Waiting for pending navigations...
+[1544105267.687][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.771][INFO]: Waiting for pending navigations...
+[1544105267.777][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.777][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105267.781][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105267.781][INFO]: Waiting for pending navigations...
+[1544105267.783][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.785][INFO]: Waiting for pending navigations...
+[1544105267.786][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.786][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105267.791][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105267.791][INFO]: Waiting for pending navigations...
+[1544105267.792][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.792][INFO]: Waiting for pending navigations...
+[1544105267.792][INFO]: Done waiting for pending navigations. Status: ok
+[1544105267.792][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105267.796][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105267.797][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105268.300][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105268.301][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105268.804][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105268.804][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105268.808][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105268.808][INFO]: Waiting for pending navigations...
+[1544105268.808][INFO]: Done waiting for pending navigations. Status: ok
+[1544105268.942][INFO]: Waiting for pending navigations...
+[1544105268.945][INFO]: Done waiting for pending navigations. Status: ok
+[1544105268.945][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eXQc153f+7lV1dgIkCABkgAJcAfFTaRMiZIsWpIlSyPFcmxrLB9rnsexMzPPSV7mvSwvOUlmcpJJMpPlzFtyknk+eW+SjMfRzNjxIlkxbWkky9pFmSIlSiTFfQVJAARIkACxdVfd9..."
+[1544105268.972][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1544105268.972][INFO]: Waiting for pending navigations...
+[1544105268.973][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.000][INFO]: Waiting for pending navigations...
+[1544105269.001][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.001][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-9"
+}
+[1544105269.006][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-9",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-9"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105269.006][INFO]: Waiting for pending navigations...
+[1544105269.007][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.011][INFO]: Waiting for pending navigations...
+[1544105269.011][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.011][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105269.015][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105269.015][INFO]: Waiting for pending navigations...
+[1544105269.015][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.017][INFO]: Waiting for pending navigations...
+[1544105269.018][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.018][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105269.021][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-9"
+}
+[1544105269.021][INFO]: Waiting for pending navigations...
+[1544105269.023][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.038][INFO]: Waiting for pending navigations...
+[1544105269.039][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.039][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105269.042][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-9"
+}
+[1544105269.042][INFO]: Waiting for pending navigations...
+[1544105269.042][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.051][INFO]: Waiting for pending navigations...
+[1544105269.054][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.054][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105269.057][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-9"
+}
+[1544105269.057][INFO]: Waiting for pending navigations...
+[1544105269.058][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.147][INFO]: Waiting for pending navigations...
+[1544105269.157][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.157][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105269.161][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105269.161][INFO]: Waiting for pending navigations...
+[1544105269.162][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.165][INFO]: Waiting for pending navigations...
+[1544105269.165][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.165][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105269.168][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105269.168][INFO]: Waiting for pending navigations...
+[1544105269.169][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.169][INFO]: Waiting for pending navigations...
+[1544105269.169][INFO]: Done waiting for pending navigations. Status: ok
+[1544105269.169][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105269.172][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105269.173][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105269.676][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105272.444][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105272.449][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105272.449][INFO]: Waiting for pending navigations...
+[1544105272.450][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.650][INFO]: Waiting for pending navigations...
+[1544105272.651][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.651][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eXQc133n+7lV3WgABEiQ4AKQAHdQJEUtpkSZFrVYshRrLI+XWD6Wn+PEk+RlZl5m3izvzZlJMmfWZGZy8pY5k4zPey+TxPHIiR0vsjWmbVmyZO2UKVKiRErcV5AEQIAECBBbd9V9f..."
+[1544105272.672][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']"
+}
+[1544105272.672][INFO]: Waiting for pending navigations...
+[1544105272.673][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.689][INFO]: Waiting for pending navigations...
+[1544105272.690][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.690][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-10"
+}
+[1544105272.693][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.24228670975380973-10",
+      "element-6066-11e4-a52e-4f735466cecf": "0.24228670975380973-10"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1544105272.693][INFO]: Waiting for pending navigations...
+[1544105272.694][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.696][INFO]: Waiting for pending navigations...
+[1544105272.697][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.697][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript
+[1544105272.701][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105272.701][INFO]: Waiting for pending navigations...
+[1544105272.702][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.705][INFO]: Waiting for pending navigations...
+[1544105272.706][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.706][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105272.708][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementDisplayed {
+   "id": "0.24228670975380973-10"
+}
+[1544105272.708][INFO]: Waiting for pending navigations...
+[1544105272.709][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.723][INFO]: Waiting for pending navigations...
+[1544105272.725][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.725][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementDisplayed true
+[1544105272.728][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-10"
+}
+[1544105272.728][INFO]: Waiting for pending navigations...
+[1544105272.729][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.737][INFO]: Waiting for pending navigations...
+[1544105272.738][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.738][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled true
+[1544105272.741][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-10"
+}
+[1544105272.741][INFO]: Waiting for pending navigations...
+[1544105272.742][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.816][INFO]: Waiting for pending navigations...
+[1544105272.820][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.820][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105272.823][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105272.823][INFO]: Waiting for pending navigations...
+[1544105272.824][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.827][INFO]: Waiting for pending navigations...
+[1544105272.828][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.828][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105272.832][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105272.832][INFO]: Waiting for pending navigations...
+[1544105272.833][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.833][INFO]: Waiting for pending navigations...
+[1544105272.833][INFO]: Done waiting for pending navigations. Status: ok
+[1544105272.833][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105272.836][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105272.836][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105273.341][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105273.342][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105273.847][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105273.848][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105273.854][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105273.854][INFO]: Waiting for pending navigations...
+[1544105273.855][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.008][INFO]: Waiting for pending navigations...
+[1544105274.010][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.010][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eXgc533n+XmrutEACJAgQRIACfAGRVLUYUqUZFG3pVhjeXzE8lpZx4knyWZmdmZ3jt15ZiaZZ+fMbPJkj3l2sn52N3M4iZzY8SFLMW0puqybMkVKlEiJ9wmSAAiQIAHi6q569486u..."
+[1544105274.034][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Scenario Name ']/parent::div/descendant::input"
+}
+[1544105274.034][INFO]: Waiting for pending navigations...
+[1544105274.035][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.052][INFO]: Waiting for pending navigations...
+[1544105274.052][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.052][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-11"
+}
+[1544105274.056][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105274.056][INFO]: Waiting for pending navigations...
+[1544105274.057][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.060][INFO]: Waiting for pending navigations...
+[1544105274.060][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.060][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105274.064][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClearElement {
+   "id": "0.24228670975380973-11"
+}
+[1544105274.064][INFO]: Waiting for pending navigations...
+[1544105274.065][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.095][INFO]: Waiting for pending navigations...
+[1544105274.095][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.095][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClearElement
+[1544105274.098][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND TypeElement {
+   "id": "0.24228670975380973-11",
+   "value": [ "new_netstorm_test1" ]
+}
+[1544105274.098][INFO]: Waiting for pending navigations...
+[1544105274.099][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.673][INFO]: Waiting for pending navigations...
+[1544105274.686][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.687][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE TypeElement
+[1544105274.689][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105274.689][INFO]: Waiting for pending navigations...
+[1544105274.690][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.692][INFO]: Waiting for pending navigations...
+[1544105274.692][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.692][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105274.695][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105274.695][INFO]: Waiting for pending navigations...
+[1544105274.695][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.695][INFO]: Waiting for pending navigations...
+[1544105274.696][INFO]: Done waiting for pending navigations. Status: ok
+[1544105274.696][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105274.698][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105274.699][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105275.203][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105275.204][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105275.708][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105275.709][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105275.718][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105275.718][INFO]: Waiting for pending navigations...
+[1544105275.720][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.914][INFO]: Waiting for pending navigations...
+[1544105275.915][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.916][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOy9eZQd133f+blV771e0A000Fi6gW7sDQIgSFAgQUIEF5EiLUZUtFjUET2yYsd2nGTiGTuZyUli50xWZ5LjmUnOxKMzGTuJbFO2ZC2UaEEizU3cQYEACRIAsa8NoLvRDTTQjd7eq7rzR..."
+[1544105275.943][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//footer/descendant::button[@label='Next']"
+}
+[1544105275.943][INFO]: Waiting for pending navigations...
+[1544105275.944][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.961][INFO]: Waiting for pending navigations...
+[1544105275.961][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.961][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE FindElement {
+   "ELEMENT": "0.24228670975380973-12"
+}
+[1544105275.964][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetUrl {
+
+}
+[1544105275.964][INFO]: Waiting for pending navigations...
+[1544105275.965][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.967][INFO]: Waiting for pending navigations...
+[1544105275.968][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.968][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetUrl "http://10.10.30.106/ProductUI/#/home/openTotalScenario"
+[1544105275.972][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105275.972][INFO]: Waiting for pending navigations...
+[1544105275.974][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.975][INFO]: Waiting for pending navigations...
+[1544105275.976][INFO]: Done waiting for pending navigations. Status: ok
+[1544105275.976][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105275.979][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ClickElement {
+   "id": "0.24228670975380973-12"
+}
+[1544105275.979][INFO]: Waiting for pending navigations...
+[1544105275.979][INFO]: Done waiting for pending navigations. Status: ok
+[1544105276.067][INFO]: Waiting for pending navigations...
+[1544105276.071][INFO]: Done waiting for pending navigations. Status: ok
+[1544105276.071][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ClickElement
+[1544105276.075][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105276.075][INFO]: Waiting for pending navigations...
+[1544105276.076][INFO]: Done waiting for pending navigations. Status: ok
+[1544105276.076][INFO]: Waiting for pending navigations...
+[1544105276.077][INFO]: Done waiting for pending navigations. Status: ok
+[1544105276.077][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105276.080][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105276.081][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105276.584][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105276.587][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105277.090][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105277.090][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105277.094][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105277.094][INFO]: Waiting for pending navigations...
+[1544105277.623][INFO]: Done waiting for pending navigations. Status: ok
+[1544105277.867][INFO]: Waiting for pending navigations...
+[1544105277.869][INFO]: Done waiting for pending navigations. Status: ok
+[1544105277.869][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOydeZxVdf3/n59zt9kZcAZ0AFlENo1FEUQRSkUh1yTX1G9iJpVLaamV2q+0RTPKtFwqtTRzCTM0cTdMRQQVUAEBWRQGgREGhoHZ7vn8/jjLPefcz7n3nLn3DgPOq0cy95zP8j6f9f15f..."
+[1544105277.882][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105277.882][INFO]: Waiting for pending navigations...
+[1544105277.883][INFO]: Done waiting for pending navigations. Status: ok
+[1544105277.892][INFO]: Waiting for pending navigations...
+[1544105277.893][INFO]: Done waiting for pending navigations. Status: ok
+[1544105277.893][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105278.401][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105278.404][INFO]: Waiting for pending navigations...
+[1544105278.406][INFO]: Done waiting for pending navigations. Status: ok
+[1544105278.431][INFO]: Waiting for pending navigations...
+[1544105278.651][INFO]: Done waiting for pending navigations. Status: ok
+[1544105278.651][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105279.156][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105279.157][INFO]: Waiting for pending navigations...
+[1544105279.187][INFO]: Done waiting for pending navigations. Status: ok
+[1544105279.196][INFO]: Waiting for pending navigations...
+[1544105279.199][INFO]: Done waiting for pending navigations. Status: ok
+[1544105279.199][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105279.705][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105279.705][INFO]: Waiting for pending navigations...
+[1544105279.707][INFO]: Done waiting for pending navigations. Status: ok
+[1544105279.726][INFO]: Waiting for pending navigations...
+[1544105279.727][INFO]: Done waiting for pending navigations. Status: ok
+[1544105279.727][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105280.234][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105280.234][INFO]: Waiting for pending navigations...
+[1544105280.235][INFO]: Done waiting for pending navigations. Status: ok
+[1544105280.249][INFO]: Waiting for pending navigations...
+[1544105280.250][INFO]: Done waiting for pending navigations. Status: ok
+[1544105280.251][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105280.756][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105280.756][INFO]: Waiting for pending navigations...
+[1544105280.758][INFO]: Done waiting for pending navigations. Status: ok
+[1544105280.772][INFO]: Waiting for pending navigations...
+[1544105280.774][INFO]: Done waiting for pending navigations. Status: ok
+[1544105280.774][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105281.279][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105281.280][INFO]: Waiting for pending navigations...
+[1544105281.281][INFO]: Done waiting for pending navigations. Status: ok
+[1544105281.288][INFO]: Waiting for pending navigations...
+[1544105281.289][INFO]: Done waiting for pending navigations. Status: ok
+[1544105281.289][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105281.795][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105281.795][INFO]: Waiting for pending navigations...
+[1544105281.797][INFO]: Done waiting for pending navigations. Status: ok
+[1544105281.814][INFO]: Waiting for pending navigations...
+[1544105281.816][INFO]: Done waiting for pending navigations. Status: ok
+[1544105281.816][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105282.322][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105282.322][INFO]: Waiting for pending navigations...
+[1544105282.324][INFO]: Done waiting for pending navigations. Status: ok
+[1544105282.338][INFO]: Waiting for pending navigations...
+[1544105282.339][INFO]: Done waiting for pending navigations. Status: ok
+[1544105282.339][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105282.845][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105282.845][INFO]: Waiting for pending navigations...
+[1544105282.848][INFO]: Done waiting for pending navigations. Status: ok
+[1544105282.866][INFO]: Waiting for pending navigations...
+[1544105282.867][INFO]: Done waiting for pending navigations. Status: ok
+[1544105282.867][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105283.375][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105283.375][INFO]: Waiting for pending navigations...
+[1544105283.378][INFO]: Done waiting for pending navigations. Status: ok
+[1544105283.398][INFO]: Waiting for pending navigations...
+[1544105283.399][INFO]: Done waiting for pending navigations. Status: ok
+[1544105283.400][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105283.908][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105283.908][INFO]: Waiting for pending navigations...
+[1544105283.910][INFO]: Done waiting for pending navigations. Status: ok
+[1544105283.930][INFO]: Waiting for pending navigations...
+[1544105283.939][INFO]: Done waiting for pending navigations. Status: ok
+[1544105283.939][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105284.448][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105284.448][INFO]: Waiting for pending navigations...
+[1544105284.450][INFO]: Done waiting for pending navigations. Status: ok
+[1544105284.458][INFO]: Waiting for pending navigations...
+[1544105284.459][INFO]: Done waiting for pending navigations. Status: ok
+[1544105284.459][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105284.965][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105284.965][INFO]: Waiting for pending navigations...
+[1544105284.967][INFO]: Done waiting for pending navigations. Status: ok
+[1544105285.005][INFO]: Waiting for pending navigations...
+[1544105285.006][INFO]: Done waiting for pending navigations. Status: ok
+[1544105285.006][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105285.512][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105285.512][INFO]: Waiting for pending navigations...
+[1544105285.515][INFO]: Done waiting for pending navigations. Status: ok
+[1544105285.533][INFO]: Waiting for pending navigations...
+[1544105285.535][INFO]: Done waiting for pending navigations. Status: ok
+[1544105285.535][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105286.043][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105286.043][INFO]: Waiting for pending navigations...
+[1544105286.045][INFO]: Done waiting for pending navigations. Status: ok
+[1544105286.066][INFO]: Waiting for pending navigations...
+[1544105286.068][INFO]: Done waiting for pending navigations. Status: ok
+[1544105286.068][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105286.577][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105286.577][INFO]: Waiting for pending navigations...
+[1544105286.579][INFO]: Done waiting for pending navigations. Status: ok
+[1544105286.597][INFO]: Waiting for pending navigations...
+[1544105286.598][INFO]: Done waiting for pending navigations. Status: ok
+[1544105286.598][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105287.106][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105287.106][INFO]: Waiting for pending navigations...
+[1544105287.109][INFO]: Done waiting for pending navigations. Status: ok
+[1544105287.129][INFO]: Waiting for pending navigations...
+[1544105287.130][INFO]: Done waiting for pending navigations. Status: ok
+[1544105287.131][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105287.638][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105287.638][INFO]: Waiting for pending navigations...
+[1544105287.640][INFO]: Done waiting for pending navigations. Status: ok
+[1544105287.647][INFO]: Waiting for pending navigations...
+[1544105287.647][INFO]: Done waiting for pending navigations. Status: ok
+[1544105287.647][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105288.153][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105288.153][INFO]: Waiting for pending navigations...
+[1544105288.155][INFO]: Done waiting for pending navigations. Status: ok
+[1544105288.175][INFO]: Waiting for pending navigations...
+[1544105288.177][INFO]: Done waiting for pending navigations. Status: ok
+[1544105288.177][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105288.685][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105288.685][INFO]: Waiting for pending navigations...
+[1544105288.688][INFO]: Done waiting for pending navigations. Status: ok
+[1544105288.714][INFO]: Waiting for pending navigations...
+[1544105288.719][INFO]: Done waiting for pending navigations. Status: ok
+[1544105288.719][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105289.226][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105289.226][INFO]: Waiting for pending navigations...
+[1544105289.229][INFO]: Done waiting for pending navigations. Status: ok
+[1544105289.251][INFO]: Waiting for pending navigations...
+[1544105289.253][INFO]: Done waiting for pending navigations. Status: ok
+[1544105289.253][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105289.761][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105289.762][INFO]: Waiting for pending navigations...
+[1544105289.764][INFO]: Done waiting for pending navigations. Status: ok
+[1544105289.775][INFO]: Waiting for pending navigations...
+[1544105289.776][INFO]: Done waiting for pending navigations. Status: ok
+[1544105289.776][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105290.281][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105290.281][INFO]: Waiting for pending navigations...
+[1544105290.284][INFO]: Done waiting for pending navigations. Status: ok
+[1544105290.306][INFO]: Waiting for pending navigations...
+[1544105290.308][INFO]: Done waiting for pending navigations. Status: ok
+[1544105290.308][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105290.816][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105290.816][INFO]: Waiting for pending navigations...
+[1544105290.818][INFO]: Done waiting for pending navigations. Status: ok
+[1544105290.825][INFO]: Waiting for pending navigations...
+[1544105290.826][INFO]: Done waiting for pending navigations. Status: ok
+[1544105290.826][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105291.333][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105291.333][INFO]: Waiting for pending navigations...
+[1544105291.336][INFO]: Done waiting for pending navigations. Status: ok
+[1544105291.357][INFO]: Waiting for pending navigations...
+[1544105291.360][INFO]: Done waiting for pending navigations. Status: ok
+[1544105291.360][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105291.867][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105291.867][INFO]: Waiting for pending navigations...
+[1544105291.870][INFO]: Done waiting for pending navigations. Status: ok
+[1544105291.877][INFO]: Waiting for pending navigations...
+[1544105291.879][INFO]: Done waiting for pending navigations. Status: ok
+[1544105291.879][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105292.384][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105292.385][INFO]: Waiting for pending navigations...
+[1544105292.387][INFO]: Done waiting for pending navigations. Status: ok
+[1544105292.408][INFO]: Waiting for pending navigations...
+[1544105292.410][INFO]: Done waiting for pending navigations. Status: ok
+[1544105292.410][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105292.918][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105292.918][INFO]: Waiting for pending navigations...
+[1544105292.921][INFO]: Done waiting for pending navigations. Status: ok
+[1544105292.953][INFO]: Waiting for pending navigations...
+[1544105292.960][INFO]: Done waiting for pending navigations. Status: ok
+[1544105292.960][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105293.466][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105293.466][INFO]: Waiting for pending navigations...
+[1544105293.469][INFO]: Done waiting for pending navigations. Status: ok
+[1544105293.480][INFO]: Waiting for pending navigations...
+[1544105293.481][INFO]: Done waiting for pending navigations. Status: ok
+[1544105293.481][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105293.985][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105293.986][INFO]: Waiting for pending navigations...
+[1544105293.988][INFO]: Done waiting for pending navigations. Status: ok
+[1544105294.008][INFO]: Waiting for pending navigations...
+[1544105294.010][INFO]: Done waiting for pending navigations. Status: ok
+[1544105294.010][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105294.518][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105294.518][INFO]: Waiting for pending navigations...
+[1544105294.520][INFO]: Done waiting for pending navigations. Status: ok
+[1544105294.531][INFO]: Waiting for pending navigations...
+[1544105294.531][INFO]: Done waiting for pending navigations. Status: ok
+[1544105294.531][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105295.037][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105295.037][INFO]: Waiting for pending navigations...
+[1544105295.039][INFO]: Done waiting for pending navigations. Status: ok
+[1544105295.060][INFO]: Waiting for pending navigations...
+[1544105295.062][INFO]: Done waiting for pending navigations. Status: ok
+[1544105295.062][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105295.570][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105295.570][INFO]: Waiting for pending navigations...
+[1544105295.572][INFO]: Done waiting for pending navigations. Status: ok
+[1544105295.583][INFO]: Waiting for pending navigations...
+[1544105295.584][INFO]: Done waiting for pending navigations. Status: ok
+[1544105295.584][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105296.088][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105296.089][INFO]: Waiting for pending navigations...
+[1544105296.090][INFO]: Done waiting for pending navigations. Status: ok
+[1544105296.107][INFO]: Waiting for pending navigations...
+[1544105296.108][INFO]: Done waiting for pending navigations. Status: ok
+[1544105296.108][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105296.615][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105296.615][INFO]: Waiting for pending navigations...
+[1544105296.618][INFO]: Done waiting for pending navigations. Status: ok
+[1544105296.625][INFO]: Waiting for pending navigations...
+[1544105296.627][INFO]: Done waiting for pending navigations. Status: ok
+[1544105296.627][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105297.132][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105297.132][INFO]: Waiting for pending navigations...
+[1544105297.135][INFO]: Done waiting for pending navigations. Status: ok
+[1544105297.159][INFO]: Waiting for pending navigations...
+[1544105297.161][INFO]: Done waiting for pending navigations. Status: ok
+[1544105297.161][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105297.669][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105297.669][INFO]: Waiting for pending navigations...
+[1544105297.671][INFO]: Done waiting for pending navigations. Status: ok
+[1544105297.686][INFO]: Waiting for pending navigations...
+[1544105297.687][INFO]: Done waiting for pending navigations. Status: ok
+[1544105297.687][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105298.193][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105298.193][INFO]: Waiting for pending navigations...
+[1544105298.195][INFO]: Done waiting for pending navigations. Status: ok
+[1544105298.215][INFO]: Waiting for pending navigations...
+[1544105298.217][INFO]: Done waiting for pending navigations. Status: ok
+[1544105298.217][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105298.724][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105298.724][INFO]: Waiting for pending navigations...
+[1544105298.726][INFO]: Done waiting for pending navigations. Status: ok
+[1544105298.743][INFO]: Waiting for pending navigations...
+[1544105298.745][INFO]: Done waiting for pending navigations. Status: ok
+[1544105298.745][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105299.252][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105299.252][INFO]: Waiting for pending navigations...
+[1544105299.254][INFO]: Done waiting for pending navigations. Status: ok
+[1544105299.275][INFO]: Waiting for pending navigations...
+[1544105299.277][INFO]: Done waiting for pending navigations. Status: ok
+[1544105299.277][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105299.785][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105299.785][INFO]: Waiting for pending navigations...
+[1544105299.787][INFO]: Done waiting for pending navigations. Status: ok
+[1544105299.810][INFO]: Waiting for pending navigations...
+[1544105299.813][INFO]: Done waiting for pending navigations. Status: ok
+[1544105299.813][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105300.320][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105300.320][INFO]: Waiting for pending navigations...
+[1544105300.323][INFO]: Done waiting for pending navigations. Status: ok
+[1544105300.334][INFO]: Waiting for pending navigations...
+[1544105300.335][INFO]: Done waiting for pending navigations. Status: ok
+[1544105300.335][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105300.840][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105300.840][INFO]: Waiting for pending navigations...
+[1544105300.843][INFO]: Done waiting for pending navigations. Status: ok
+[1544105300.862][INFO]: Waiting for pending navigations...
+[1544105300.863][INFO]: Done waiting for pending navigations. Status: ok
+[1544105300.864][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105301.372][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105301.372][INFO]: Waiting for pending navigations...
+[1544105301.373][INFO]: Done waiting for pending navigations. Status: ok
+[1544105301.380][INFO]: Waiting for pending navigations...
+[1544105301.380][INFO]: Done waiting for pending navigations. Status: ok
+[1544105301.380][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105301.886][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105301.886][INFO]: Waiting for pending navigations...
+[1544105301.888][INFO]: Done waiting for pending navigations. Status: ok
+[1544105301.899][INFO]: Waiting for pending navigations...
+[1544105301.899][INFO]: Done waiting for pending navigations. Status: ok
+[1544105301.899][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105302.405][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105302.405][INFO]: Waiting for pending navigations...
+[1544105302.408][INFO]: Done waiting for pending navigations. Status: ok
+[1544105302.422][INFO]: Waiting for pending navigations...
+[1544105302.422][INFO]: Done waiting for pending navigations. Status: ok
+[1544105302.422][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105302.927][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105302.928][INFO]: Waiting for pending navigations...
+[1544105302.930][INFO]: Done waiting for pending navigations. Status: ok
+[1544105302.940][INFO]: Waiting for pending navigations...
+[1544105302.941][INFO]: Done waiting for pending navigations. Status: ok
+[1544105302.941][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105303.446][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105303.446][INFO]: Waiting for pending navigations...
+[1544105303.449][INFO]: Done waiting for pending navigations. Status: ok
+[1544105303.471][INFO]: Waiting for pending navigations...
+[1544105303.472][INFO]: Done waiting for pending navigations. Status: ok
+[1544105303.472][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105303.980][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105303.980][INFO]: Waiting for pending navigations...
+[1544105303.983][INFO]: Done waiting for pending navigations. Status: ok
+[1544105303.994][INFO]: Waiting for pending navigations...
+[1544105303.994][INFO]: Done waiting for pending navigations. Status: ok
+[1544105303.995][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105304.500][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105304.500][INFO]: Waiting for pending navigations...
+[1544105304.503][INFO]: Done waiting for pending navigations. Status: ok
+[1544105304.524][INFO]: Waiting for pending navigations...
+[1544105304.526][INFO]: Done waiting for pending navigations. Status: ok
+[1544105304.526][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105305.033][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105305.034][INFO]: Waiting for pending navigations...
+[1544105305.036][INFO]: Done waiting for pending navigations. Status: ok
+[1544105305.054][INFO]: Waiting for pending navigations...
+[1544105305.056][INFO]: Done waiting for pending navigations. Status: ok
+[1544105305.056][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105305.563][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105305.563][INFO]: Waiting for pending navigations...
+[1544105305.564][INFO]: Done waiting for pending navigations. Status: ok
+[1544105305.570][INFO]: Waiting for pending navigations...
+[1544105305.570][INFO]: Done waiting for pending navigations. Status: ok
+[1544105305.570][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105306.075][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105306.075][INFO]: Waiting for pending navigations...
+[1544105306.078][INFO]: Done waiting for pending navigations. Status: ok
+[1544105306.097][INFO]: Waiting for pending navigations...
+[1544105306.099][INFO]: Done waiting for pending navigations. Status: ok
+[1544105306.099][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105306.607][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105306.607][INFO]: Waiting for pending navigations...
+[1544105306.609][INFO]: Done waiting for pending navigations. Status: ok
+[1544105306.627][INFO]: Waiting for pending navigations...
+[1544105306.629][INFO]: Done waiting for pending navigations. Status: ok
+[1544105306.629][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105307.135][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105307.135][INFO]: Waiting for pending navigations...
+[1544105307.138][INFO]: Done waiting for pending navigations. Status: ok
+[1544105307.155][INFO]: Waiting for pending navigations...
+[1544105307.156][INFO]: Done waiting for pending navigations. Status: ok
+[1544105307.156][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105307.663][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105307.663][INFO]: Waiting for pending navigations...
+[1544105307.665][INFO]: Done waiting for pending navigations. Status: ok
+[1544105307.683][INFO]: Waiting for pending navigations...
+[1544105307.685][INFO]: Done waiting for pending navigations. Status: ok
+[1544105307.685][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105308.192][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105308.192][INFO]: Waiting for pending navigations...
+[1544105308.195][INFO]: Done waiting for pending navigations. Status: ok
+[1544105308.216][INFO]: Waiting for pending navigations...
+[1544105308.218][INFO]: Done waiting for pending navigations. Status: ok
+[1544105308.219][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105308.726][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105308.726][INFO]: Waiting for pending navigations...
+[1544105308.728][INFO]: Done waiting for pending navigations. Status: ok
+[1544105308.750][INFO]: Waiting for pending navigations...
+[1544105308.752][INFO]: Done waiting for pending navigations. Status: ok
+[1544105308.753][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105309.260][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105309.260][INFO]: Waiting for pending navigations...
+[1544105309.262][INFO]: Done waiting for pending navigations. Status: ok
+[1544105309.276][INFO]: Waiting for pending navigations...
+[1544105309.276][INFO]: Done waiting for pending navigations. Status: ok
+[1544105309.276][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105309.782][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105309.782][INFO]: Waiting for pending navigations...
+[1544105309.784][INFO]: Done waiting for pending navigations. Status: ok
+[1544105309.801][INFO]: Waiting for pending navigations...
+[1544105309.803][INFO]: Done waiting for pending navigations. Status: ok
+[1544105309.803][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105310.311][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105310.311][INFO]: Waiting for pending navigations...
+[1544105310.314][INFO]: Done waiting for pending navigations. Status: ok
+[1544105310.337][INFO]: Waiting for pending navigations...
+[1544105310.339][INFO]: Done waiting for pending navigations. Status: ok
+[1544105310.339][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105310.846][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105310.846][INFO]: Waiting for pending navigations...
+[1544105310.848][INFO]: Done waiting for pending navigations. Status: ok
+[1544105310.871][INFO]: Waiting for pending navigations...
+[1544105310.872][INFO]: Done waiting for pending navigations. Status: ok
+[1544105310.873][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105311.381][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105311.381][INFO]: Waiting for pending navigations...
+[1544105311.384][INFO]: Done waiting for pending navigations. Status: ok
+[1544105311.407][INFO]: Waiting for pending navigations...
+[1544105311.409][INFO]: Done waiting for pending navigations. Status: ok
+[1544105311.409][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105311.916][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105311.916][INFO]: Waiting for pending navigations...
+[1544105311.919][INFO]: Done waiting for pending navigations. Status: ok
+[1544105311.930][INFO]: Waiting for pending navigations...
+[1544105311.930][INFO]: Done waiting for pending navigations. Status: ok
+[1544105311.930][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105312.435][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105312.436][INFO]: Waiting for pending navigations...
+[1544105312.438][INFO]: Done waiting for pending navigations. Status: ok
+[1544105312.461][INFO]: Waiting for pending navigations...
+[1544105312.464][INFO]: Done waiting for pending navigations. Status: ok
+[1544105312.464][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105312.971][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105312.971][INFO]: Waiting for pending navigations...
+[1544105312.974][INFO]: Done waiting for pending navigations. Status: ok
+[1544105312.985][INFO]: Waiting for pending navigations...
+[1544105312.985][INFO]: Done waiting for pending navigations. Status: ok
+[1544105312.985][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105313.490][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105313.490][INFO]: Waiting for pending navigations...
+[1544105313.493][INFO]: Done waiting for pending navigations. Status: ok
+[1544105313.515][INFO]: Waiting for pending navigations...
+[1544105313.518][INFO]: Done waiting for pending navigations. Status: ok
+[1544105313.518][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105314.024][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105314.024][INFO]: Waiting for pending navigations...
+[1544105314.025][INFO]: Done waiting for pending navigations. Status: ok
+[1544105314.031][INFO]: Waiting for pending navigations...
+[1544105314.032][INFO]: Done waiting for pending navigations. Status: ok
+[1544105314.032][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105314.537][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105314.537][INFO]: Waiting for pending navigations...
+[1544105314.539][INFO]: Done waiting for pending navigations. Status: ok
+[1544105314.558][INFO]: Waiting for pending navigations...
+[1544105314.560][INFO]: Done waiting for pending navigations. Status: ok
+[1544105314.560][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105315.066][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105315.066][INFO]: Waiting for pending navigations...
+[1544105315.068][INFO]: Done waiting for pending navigations. Status: ok
+[1544105315.088][INFO]: Waiting for pending navigations...
+[1544105315.090][INFO]: Done waiting for pending navigations. Status: ok
+[1544105315.090][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105315.597][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105315.597][INFO]: Waiting for pending navigations...
+[1544105315.599][INFO]: Done waiting for pending navigations. Status: ok
+[1544105315.621][INFO]: Waiting for pending navigations...
+[1544105315.623][INFO]: Done waiting for pending navigations. Status: ok
+[1544105315.623][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105316.130][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105316.130][INFO]: Waiting for pending navigations...
+[1544105316.132][INFO]: Done waiting for pending navigations. Status: ok
+[1544105316.146][INFO]: Waiting for pending navigations...
+[1544105316.146][INFO]: Done waiting for pending navigations. Status: ok
+[1544105316.146][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105316.652][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105316.652][INFO]: Waiting for pending navigations...
+[1544105316.654][INFO]: Done waiting for pending navigations. Status: ok
+[1544105316.676][INFO]: Waiting for pending navigations...
+[1544105316.678][INFO]: Done waiting for pending navigations. Status: ok
+[1544105316.679][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105317.185][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105317.185][INFO]: Waiting for pending navigations...
+[1544105317.187][INFO]: Done waiting for pending navigations. Status: ok
+[1544105317.206][INFO]: Waiting for pending navigations...
+[1544105317.208][INFO]: Done waiting for pending navigations. Status: ok
+[1544105317.208][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105317.715][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105317.715][INFO]: Waiting for pending navigations...
+[1544105317.717][INFO]: Done waiting for pending navigations. Status: ok
+[1544105317.739][INFO]: Waiting for pending navigations...
+[1544105317.740][INFO]: Done waiting for pending navigations. Status: ok
+[1544105317.740][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105318.252][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105318.252][INFO]: Waiting for pending navigations...
+[1544105318.255][INFO]: Done waiting for pending navigations. Status: ok
+[1544105318.277][INFO]: Waiting for pending navigations...
+[1544105318.278][INFO]: Done waiting for pending navigations. Status: ok
+[1544105318.279][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105318.786][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105318.786][INFO]: Waiting for pending navigations...
+[1544105318.789][INFO]: Done waiting for pending navigations. Status: ok
+[1544105318.810][INFO]: Waiting for pending navigations...
+[1544105318.812][INFO]: Done waiting for pending navigations. Status: ok
+[1544105318.812][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105319.320][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105319.320][INFO]: Waiting for pending navigations...
+[1544105319.323][INFO]: Done waiting for pending navigations. Status: ok
+[1544105319.334][INFO]: Waiting for pending navigations...
+[1544105319.334][INFO]: Done waiting for pending navigations. Status: ok
+[1544105319.334][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105319.839][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105319.839][INFO]: Waiting for pending navigations...
+[1544105319.841][INFO]: Done waiting for pending navigations. Status: ok
+[1544105319.851][INFO]: Waiting for pending navigations...
+[1544105319.851][INFO]: Done waiting for pending navigations. Status: ok
+[1544105319.851][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105320.358][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105320.358][INFO]: Waiting for pending navigations...
+[1544105320.363][INFO]: Done waiting for pending navigations. Status: ok
+[1544105320.386][INFO]: Waiting for pending navigations...
+[1544105320.388][INFO]: Done waiting for pending navigations. Status: ok
+[1544105320.388][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105320.897][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105320.897][INFO]: Waiting for pending navigations...
+[1544105320.899][INFO]: Done waiting for pending navigations. Status: ok
+[1544105320.918][INFO]: Waiting for pending navigations...
+[1544105320.920][INFO]: Done waiting for pending navigations. Status: ok
+[1544105320.920][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105321.426][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105321.426][INFO]: Waiting for pending navigations...
+[1544105321.428][INFO]: Done waiting for pending navigations. Status: ok
+[1544105321.447][INFO]: Waiting for pending navigations...
+[1544105321.448][INFO]: Done waiting for pending navigations. Status: ok
+[1544105321.448][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105321.955][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105321.955][INFO]: Waiting for pending navigations...
+[1544105321.957][INFO]: Done waiting for pending navigations. Status: ok
+[1544105321.984][INFO]: Waiting for pending navigations...
+[1544105321.986][INFO]: Done waiting for pending navigations. Status: ok
+[1544105321.986][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105322.494][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105322.494][INFO]: Waiting for pending navigations...
+[1544105322.497][INFO]: Done waiting for pending navigations. Status: ok
+[1544105322.515][INFO]: Waiting for pending navigations...
+[1544105322.517][INFO]: Done waiting for pending navigations. Status: ok
+[1544105322.517][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105323.023][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105323.023][INFO]: Waiting for pending navigations...
+[1544105323.025][INFO]: Done waiting for pending navigations. Status: ok
+[1544105323.034][INFO]: Waiting for pending navigations...
+[1544105323.035][INFO]: Done waiting for pending navigations. Status: ok
+[1544105323.035][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105323.541][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105323.542][INFO]: Waiting for pending navigations...
+[1544105323.544][INFO]: Done waiting for pending navigations. Status: ok
+[1544105323.565][INFO]: Waiting for pending navigations...
+[1544105323.567][INFO]: Done waiting for pending navigations. Status: ok
+[1544105323.567][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105324.075][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105324.075][INFO]: Waiting for pending navigations...
+[1544105324.077][INFO]: Done waiting for pending navigations. Status: ok
+[1544105324.083][INFO]: Waiting for pending navigations...
+[1544105324.084][INFO]: Done waiting for pending navigations. Status: ok
+[1544105324.084][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105324.589][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105324.589][INFO]: Waiting for pending navigations...
+[1544105324.591][INFO]: Done waiting for pending navigations. Status: ok
+[1544105324.615][INFO]: Waiting for pending navigations...
+[1544105324.617][INFO]: Done waiting for pending navigations. Status: ok
+[1544105324.618][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105325.125][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105325.126][INFO]: Waiting for pending navigations...
+[1544105325.128][INFO]: Done waiting for pending navigations. Status: ok
+[1544105325.147][INFO]: Waiting for pending navigations...
+[1544105325.149][INFO]: Done waiting for pending navigations. Status: ok
+[1544105325.149][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105325.656][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105325.656][INFO]: Waiting for pending navigations...
+[1544105325.658][INFO]: Done waiting for pending navigations. Status: ok
+[1544105325.679][INFO]: Waiting for pending navigations...
+[1544105325.681][INFO]: Done waiting for pending navigations. Status: ok
+[1544105325.681][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105326.190][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105326.190][INFO]: Waiting for pending navigations...
+[1544105326.193][INFO]: Done waiting for pending navigations. Status: ok
+[1544105326.216][INFO]: Waiting for pending navigations...
+[1544105326.218][INFO]: Done waiting for pending navigations. Status: ok
+[1544105326.218][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105326.725][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105326.725][INFO]: Waiting for pending navigations...
+[1544105326.728][INFO]: Done waiting for pending navigations. Status: ok
+[1544105326.750][INFO]: Waiting for pending navigations...
+[1544105326.752][INFO]: Done waiting for pending navigations. Status: ok
+[1544105326.752][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105327.259][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105327.259][INFO]: Waiting for pending navigations...
+[1544105327.262][INFO]: Done waiting for pending navigations. Status: ok
+[1544105327.276][INFO]: Waiting for pending navigations...
+[1544105327.277][INFO]: Done waiting for pending navigations. Status: ok
+[1544105327.277][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105327.782][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105327.782][INFO]: Waiting for pending navigations...
+[1544105327.785][INFO]: Done waiting for pending navigations. Status: ok
+[1544105327.808][INFO]: Waiting for pending navigations...
+[1544105327.811][INFO]: Done waiting for pending navigations. Status: ok
+[1544105327.811][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105328.318][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105328.318][INFO]: Waiting for pending navigations...
+[1544105328.319][INFO]: Done waiting for pending navigations. Status: ok
+[1544105328.341][INFO]: Waiting for pending navigations...
+[1544105328.343][INFO]: Done waiting for pending navigations. Status: ok
+[1544105328.343][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105328.850][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105328.850][INFO]: Waiting for pending navigations...
+[1544105328.852][INFO]: Done waiting for pending navigations. Status: ok
+[1544105328.877][INFO]: Waiting for pending navigations...
+[1544105328.879][INFO]: Done waiting for pending navigations. Status: ok
+[1544105328.879][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105329.388][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105329.388][INFO]: Waiting for pending navigations...
+[1544105329.390][INFO]: Done waiting for pending navigations. Status: ok
+[1544105329.412][INFO]: Waiting for pending navigations...
+[1544105329.414][INFO]: Done waiting for pending navigations. Status: ok
+[1544105329.415][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105329.921][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105329.921][INFO]: Waiting for pending navigations...
+[1544105329.923][INFO]: Done waiting for pending navigations. Status: ok
+[1544105329.939][INFO]: Waiting for pending navigations...
+[1544105329.940][INFO]: Done waiting for pending navigations. Status: ok
+[1544105329.940][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105330.446][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105330.446][INFO]: Waiting for pending navigations...
+[1544105330.449][INFO]: Done waiting for pending navigations. Status: ok
+[1544105330.468][INFO]: Waiting for pending navigations...
+[1544105330.469][INFO]: Done waiting for pending navigations. Status: ok
+[1544105330.469][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105330.975][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105330.976][INFO]: Waiting for pending navigations...
+[1544105330.977][INFO]: Done waiting for pending navigations. Status: ok
+[1544105330.989][INFO]: Waiting for pending navigations...
+[1544105330.990][INFO]: Done waiting for pending navigations. Status: ok
+[1544105330.990][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105331.495][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105331.495][INFO]: Waiting for pending navigations...
+[1544105331.497][INFO]: Done waiting for pending navigations. Status: ok
+[1544105331.511][INFO]: Waiting for pending navigations...
+[1544105331.512][INFO]: Done waiting for pending navigations. Status: ok
+[1544105331.512][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105332.019][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105332.019][INFO]: Waiting for pending navigations...
+[1544105332.021][INFO]: Done waiting for pending navigations. Status: ok
+[1544105332.051][INFO]: Waiting for pending navigations...
+[1544105332.052][INFO]: Done waiting for pending navigations. Status: ok
+[1544105332.052][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105332.558][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105332.559][INFO]: Waiting for pending navigations...
+[1544105332.561][INFO]: Done waiting for pending navigations. Status: ok
+[1544105332.582][INFO]: Waiting for pending navigations...
+[1544105332.583][INFO]: Done waiting for pending navigations. Status: ok
+[1544105332.583][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105333.090][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105333.090][INFO]: Waiting for pending navigations...
+[1544105333.091][INFO]: Done waiting for pending navigations. Status: ok
+[1544105333.106][INFO]: Waiting for pending navigations...
+[1544105333.107][INFO]: Done waiting for pending navigations. Status: ok
+[1544105333.107][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105333.613][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105333.613][INFO]: Waiting for pending navigations...
+[1544105333.616][INFO]: Done waiting for pending navigations. Status: ok
+[1544105333.633][INFO]: Waiting for pending navigations...
+[1544105333.635][INFO]: Done waiting for pending navigations. Status: ok
+[1544105333.635][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105334.142][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105334.142][INFO]: Waiting for pending navigations...
+[1544105334.144][INFO]: Done waiting for pending navigations. Status: ok
+[1544105334.161][INFO]: Waiting for pending navigations...
+[1544105334.162][INFO]: Done waiting for pending navigations. Status: ok
+[1544105334.162][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105334.669][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105334.669][INFO]: Waiting for pending navigations...
+[1544105334.671][INFO]: Done waiting for pending navigations. Status: ok
+[1544105334.689][INFO]: Waiting for pending navigations...
+[1544105334.690][INFO]: Done waiting for pending navigations. Status: ok
+[1544105334.690][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105335.197][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105335.197][INFO]: Waiting for pending navigations...
+[1544105335.199][INFO]: Done waiting for pending navigations. Status: ok
+[1544105335.214][INFO]: Waiting for pending navigations...
+[1544105335.215][INFO]: Done waiting for pending navigations. Status: ok
+[1544105335.215][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105335.722][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105335.723][INFO]: Waiting for pending navigations...
+[1544105335.725][INFO]: Done waiting for pending navigations. Status: ok
+[1544105335.747][INFO]: Waiting for pending navigations...
+[1544105335.748][INFO]: Done waiting for pending navigations. Status: ok
+[1544105335.748][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105336.256][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105336.256][INFO]: Waiting for pending navigations...
+[1544105336.259][INFO]: Done waiting for pending navigations. Status: ok
+[1544105336.281][INFO]: Waiting for pending navigations...
+[1544105336.283][INFO]: Done waiting for pending navigations. Status: ok
+[1544105336.283][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105336.790][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105336.790][INFO]: Waiting for pending navigations...
+[1544105336.792][INFO]: Done waiting for pending navigations. Status: ok
+[1544105336.809][INFO]: Waiting for pending navigations...
+[1544105336.810][INFO]: Done waiting for pending navigations. Status: ok
+[1544105336.810][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105337.317][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105337.317][INFO]: Waiting for pending navigations...
+[1544105337.320][INFO]: Done waiting for pending navigations. Status: ok
+[1544105337.341][INFO]: Waiting for pending navigations...
+[1544105337.342][INFO]: Done waiting for pending navigations. Status: ok
+[1544105337.342][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105337.848][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105337.848][INFO]: Waiting for pending navigations...
+[1544105337.850][INFO]: Done waiting for pending navigations. Status: ok
+[1544105337.870][INFO]: Waiting for pending navigations...
+[1544105337.872][INFO]: Done waiting for pending navigations. Status: ok
+[1544105337.872][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105338.379][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND IsElementEnabled {
+   "id": "0.24228670975380973-12"
+}
+[1544105338.379][INFO]: Waiting for pending navigations...
+[1544105338.381][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.401][INFO]: Waiting for pending navigations...
+[1544105338.403][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.404][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE IsElementEnabled ERROR stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+[1544105338.411][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetUrl {
+
+}
+[1544105338.411][INFO]: Waiting for pending navigations...
+[1544105338.413][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.420][INFO]: Waiting for pending navigations...
+[1544105338.423][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.423][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetUrl "http://10.10.30.106/ProductUI/#/home/scenario/schedule-setting/app-cav-scen-schedule-setting"
+[1544105338.428][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1544105338.428][INFO]: Waiting for pending navigations...
+[1544105338.431][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.441][INFO]: Waiting for pending navigations...
+[1544105338.442][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.442][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE ExecuteScript "complete"
+[1544105338.446][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindow {
+
+}
+[1544105338.446][INFO]: Waiting for pending navigations...
+[1544105338.448][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.448][INFO]: Waiting for pending navigations...
+[1544105338.448][INFO]: Done waiting for pending navigations. Status: ok
+[1544105338.448][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindow "CDwindow-845D43FA308F6C964B56AFE4A324D2C5"
+[1544105338.451][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105338.452][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105338.956][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105338.958][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105339.464][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND GetWindows {
+
+}
+[1544105339.466][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE GetWindows [ "CDwindow-845D43FA308F6C964B56AFE4A324D2C5" ]
+[1544105339.472][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Screenshot {
+
+}
+[1544105339.472][INFO]: Waiting for pending navigations...
+[1544105339.474][INFO]: Done waiting for pending navigations. Status: ok
+[1544105339.641][INFO]: Waiting for pending navigations...
+[1544105339.642][INFO]: Done waiting for pending navigations. Status: ok
+[1544105339.642][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJyCAYAAABaLicfAAAgAElEQVR4nOydeZxVdf3/n59zt9kZcAZ0AFlENo1FEUQRSkUh1yIFTS0wE0sztVxy6VdaphVlWi7fXEozl1DDBXMNQhFEWVRAQBaFQWCEgWFgtns+vz/OOfeec+7n3HvO3HuHAefFA5j5nM++vj/vz..."
+[1544105339.657][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] COMMAND Quit {
+
+}
+[1544105339.707][INFO]: [38a04a5a65f54d6c049ef9e6aaae4e16] RESPONSE Quit

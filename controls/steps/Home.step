@@ -4,5 +4,10 @@ Then assert text <username> for element loginUserNameLabel - CheckUserName - Hom
 Composite: Given create a scenario with name $scenario_name project $project_name subproject $sub_project_name
 Then click element totalScenariosCard - ClickTotalScenario - Home
 Then click element createScenario - ClickCreateScenario - TotalScenariosPage
-Then select <project_name> for element projectSelectorSelect - SelectProject - CreateScenarioCard
-Then select <sub_project_name> for element subProjectSelectorSelect - SelectProject - CreateScenarioCard
+Then click element projectSelector - ClickProjectDropDown - CreateScenarioCard
+Then click element projectSelectorSelect-<project_name> - SelectProjectDropDown - CreateScenarioCard
+Then click element subProjectSelector - ClickSubProjectDropDown - CreateScenarioCard
+Then click element subProjectSelectorSelect-<sub_project_name> - SelectSubProjectDropDown - CreateScenarioCard
+Then sendkeys <scenario_name> for element scenarioNameTextBox - EnterScenarioName - CreateScenarioCard
+Then submit element createScenarioNextBtn - ClickOnNextForCreateScenario - CreateScenarioCard
+

@@ -1,8 +1,8 @@
 <Application>
   <CreateScenarioCard>
-    <projectSelectorSelect using="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='%s']" parameterized="true" pattern="V">
+    <projectSelectorSelect using="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='%s']" parameterized="true" pattern="%s">
     </projectSelectorSelect>
-    <subProjectSelectorSelect using="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]/descendant::select">
+    <subProjectSelectorSelect using="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='%s']" parameterized="true" pattern="%s">
     </subProjectSelectorSelect>
     <projectSelector using="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]">
     </projectSelector>

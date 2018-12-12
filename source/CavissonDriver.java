@@ -246,6 +246,7 @@ public class CavissonDriver
 			    @Override
                             public Boolean apply(WebDriver driver){
                                 try{
+				    System.out.println("Inside ThirdWait");
                                     return !element.isEnabled();
                                 }catch(NoSuchElementException e){return true;}
                                 catch(Exception e){return false;}
@@ -317,7 +318,7 @@ public class CavissonDriver
 		     }
       		catch (IOException e)
      		{
-       			System.out.println(e.getMessage());
+       			System.out.println(e.getMessage());e.printStackTrace();
       		}
      	}
        public void switchWindow(WebDriver driver) throws IOException

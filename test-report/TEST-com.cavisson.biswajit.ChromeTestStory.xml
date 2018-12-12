@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="netstorm-TECRA-C50-C" name="com.cavisson.biswajit.ChromeTestStory" skipped="0" tests="1" time="22.663" timestamp="2018-12-05T15:40:18">
+<testsuite errors="0" failures="0" hostname="netstorm-TECRA-C50-C" name="com.cavisson.biswajit.ChromeTestStory" skipped="0" tests="1" time="93.528" timestamp="2018-12-06T14:07:27">
   <properties>
     <property name="ant.project.invoked-targets" value="junit" />
     <property name="ant.file.JUnitDemo" value="/home/netstorm/biswajit/AutomaTron/build.xml" />
@@ -69,7 +69,7 @@
     <property name="sun.desktop" value="gnome" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.cavisson.biswajit.ChromeTestStory" name="run" time="22.5" />
+  <testcase classname="com.cavisson.biswajit.ChromeTestStory" name="run" time="93.376" />
   <system-out><![CDATA[Inside the log
 The test property for testcase is SimpleCreateScenario
 ./testcases/SimpleCreateScenario/test_case.conf
@@ -128,25 +128,174 @@ Using timeout for story chrome_test_login.story of 600 secs.
 Given a chrometest with testcaseName firstTest
 And open Netstorm ProductUI for http://10.10.30.106
 When login with username aditya and password cavisson
+ No Parameterized value found in scenario hence continueing as usual 
 Then sendkeys aditya for element userNameTextBox - EnterUserName - Login
+ No Parameterized value found in scenario hence continueing as usual 
 Then sendkeys cavisson for element userPasswordTextBox - EnterUserPass - Login
+ No Parameterized value found in scenario hence continueing as usual 
 Initial wait started
 Initial wait is over
 going to capture screenshot
 Completed capture screenshot
 Secondary wait started
+Inside ThirdWait
 Secondary wait Completed
 Then submit element loginButton - ClickLoginButton - Login
 Then home page login name should be aditya
+ No Parameterized value found in scenario hence continueing as usual 
 Inside assert aditya
 Then assert text aditya for element loginUserNameLabel - CheckUserName - Home
 Given create a scenario with name new_netstorm_test1 project default subproject default
+ No Parameterized value found in scenario hence continueing as usual 
 Then click element totalScenariosCard - ClickTotalScenario - Home
+ No Parameterized value found in scenario hence continueing as usual 
 Then click element createScenario - ClickCreateScenario - TotalScenariosPage
-Inside assert 
-Then select default for element projectSelectorSelect - SelectProject - CreateScenarioCard
-Inside assert 
-Then select default for element subProjectSelectorSelect - SelectProject - CreateScenarioCard
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element projectSelector - ClickProjectDropDown - CreateScenarioCard
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']
+[ DEBUG ] ResultString //div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default'] [DEBUG]
+Then click element projectSelectorSelect-default - SelectProjectDropDown - CreateScenarioCard
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element subProjectSelector - ClickSubProjectDropDown - CreateScenarioCard
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']
+[ DEBUG ] ResultString //div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default'] [DEBUG]
+Then click element subProjectSelectorSelect-default - SelectSubProjectDropDown - CreateScenarioCard
+ No Parameterized value found in scenario hence continueing as usual 
+Then sendkeys new_netstorm_test1 for element scenarioNameTextBox - EnterScenarioName - CreateScenarioCard
+ No Parameterized value found in scenario hence continueing as usual 
+Initial wait started
+Initial wait is over
+going to capture screenshot
+Completed capture screenshot
+Secondary wait started
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+Inside ThirdWait
+inside last wait
+inside last wait done
+going to capture screenshot
+going to capture screenshot done
+Then submit element createScenarioNextBtn - ClickOnNextForCreateScenario - CreateScenarioCard
 Then quit chrometest
 
 
@@ -157,14 +306,14 @@ Then quit chrometest
 Generating reports view to '/home/netstorm/biswajit/AutomaTron/target/jbehave-report' using formats '[stats, html, console]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
 Reports view generated with 4 stories (of which 2 pending) containing 3 scenarios (of which 2 pending)
 ]]></system-out>
-  <system-err><![CDATA[Dec 05, 2018 9:10:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[Dec 06, 2018 7:37:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 Starting ChromeDriver 2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d) on port 1024
 Only local connections are allowed.
 log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Dec 05, 2018 9:10:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 06, 2018 7:37:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

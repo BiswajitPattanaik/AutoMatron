@@ -57,32 +57,30 @@ public class ChromeStorySteps {
     }
     @Then("sendkeys $text for element $element - $casename - $pagename")
     public void sendKeys(@Named("text") String text , @Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "using");  			        
-	String value = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "value");  			        
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			        
+	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  
 	driver.sendKeys(locateElement(using,value),text,caseName); 
     }
     @Then("click element $element - $casename - $pagename")
     public void click(@Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "using");  			        
-	String value = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "value");  			        
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			       
+	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  
 	driver.click(locateElement(using,value),caseName); 
     }
     @Then("submit element $element - $casename - $pagename")
     public void submit(@Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "using");  			        
-	String value = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "value");  			        
-	driver.submit(locateElement(using,value),caseName); 
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			        
+	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  	               driver.submit(locateElement(using,value),caseName);	
     } 
     @Then("assert text $text for element $element - $casename - $pagename")
     public void assertByValue(@Named("text") String text,@Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "using");  			        
-	String value = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "value");  			        
-	driver.assertByValue(locateElement(using,value),text,caseName); 
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			        
+	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName); 			       driver.assertByValue(locateElement(using,value),text,caseName); 
     } 
     @Then("select $text for element $element - $casename - $pagename")
     public void select(@Named("text") String text,@Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "using");  			        
-	String value = p.getProperty(ROOT_TAG + "." + pageName + "." + element + "." + "value");  			        
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			        
+	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  	
 	driver.assertByValue(locateElement(using,value),text,caseName); 
     }   
     @Then("quit chrometest")
@@ -90,7 +88,7 @@ public class ChromeStorySteps {
         driver.quit();
     }
 
-    public By locateElement(String name , String value){
+    private By locateElement(String name , String value){
         try{
             switch(name){
                case "id":
@@ -112,10 +110,63 @@ public class ChromeStorySteps {
                return By.id(value);
                //break;
                 }
-            }catch(Exception e){System.out.println("[ ERROR ] Some error occured with the entered element name and value");}
+            }catch(Exception e){System.out.println("[ ERROR ] Some error occured with the entered element name and value");e.printStackTrace();}
         return null;
     }
+    private String checkString(String value,String string, String pageName){
+        String propertyName = string.split("-")[0];
+        String parameterProperty = ROOT_TAG + "." + pageName + "." + propertyName + "." + "parameterized";
+        if(p.containsKey(parameterProperty)?p.getProperty(parameterProperty).equals("true"):false){
+	    System.out.println(" Parameterized value found in the PropertyValue ");
+            String pattern = p.getProperty(ROOT_TAG + "." + pageName + "." + propertyName + "." + "pattern");
+	    int patternCount = charCount(pattern,'-');
+	    int stringPatternCount = charCount(string,'-');
+            if(patternCount == (stringPatternCount - 1) ){
+	        System.out.println("Pattern Matching success");
+	        String stringArr[] = string.split("-");
+                System.out.println(stringArr.length);
+	        String tokenArr[] = pattern.split("-");
+                System.out.println(tokenArr.length);
+		String resultString= "";
+	       	for(int i=0;i < tokenArr.length ;i++){
+		    resultString = evaluate(value, tokenArr[i] , stringArr[i+1]);
+		    System.out.println("Inside For Loop Tokenizer " + resultString);
+		}
+		System.out.println("[ DEBUG ] ResultString "+ resultString + " [DEBUG]");
+	        return resultString;       
+	    }
+	    else{
+                System.out.println(" Parameterized value found but not in correct manner");
+		return null;
+	    }
+	    
+	}
+	else{
+	    System.out.println(" No Parameterized value found in scenario hence continueing as usual ");
+	    return p.getProperty(ROOT_TAG + "." + pageName + "." + propertyName + "." + "value");
+	}
+    }
 
+
+    private String evaluate(String string, String token,String replaceVal){
+        try{
+	char charToken = token.charAt(1);
+	String result = "";
+        //System.out.println("Inside the loop " + charToken + " " + token + " " + replaceVal + string);
+        result = string.replace(token,replaceVal);
+        //System.out.println("Inside Case");
+	return result;
+	}catch(Exception e){e.printStackTrace();return "";}
+    }
+    private int charCount(String string,char ch){
+        int charLength = 0;
+        for (int i=0 ; i < string.length() ; i++){
+            if(string.charAt(i) == ch){
+                charLength++;
+            }
+        }
+	return charLength;	
+    }
     private void setUp(){
         Properties p = new Properties();
 	try{
