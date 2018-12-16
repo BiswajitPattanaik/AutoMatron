@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>.testcases.SimpleCreateScenario2Groups.chrome_test_login</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">./testcases/SimpleCreateScenario2Groups/chrome_test_login.story</div>
+<div class="scenario">
+<h2>Scenario: </h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a chrometest with testcaseName firstTest</div>
+<div class="step">And open Netstorm ProductUI for http://10.10.30.106</div>
+<div class="step">When login with username &lt;username&gt; and password &lt;userpass&gt;</div>
+<div class="step">Then home page login name should be &lt;username&gt;</div>
+<div class="step">Given create a scenario with name &lt;scenario_name&gt; project &lt;project_name&gt; subproject &lt;sub_project_name&gt;</div>
+<div class="step">Then add group with groupname &lt;groupname&gt; , script &lt;script_name&gt; , project &lt;project_name&gt; , subproject &lt;sub_project_name&gt;</div>
+<div class="step">Then add group with groupname &lt;groupname2&gt; , script &lt;script_name&gt; , project &lt;project_name&gt; , subproject &lt;sub_project_name&gt;</div>
+<div class="step">And save the scenario</div>
+<div class="step">And move to TotalScenarios UI</div>
+<div class="step">Then quit chrometest</div>
+<table>
+<thead>
+<tr>
+<th>username</th><th>userpass</th><th>scenario_name</th><th>project_name</th><th>sub_project_name</th><th>groupname</th><th>groupname2</th><th>script_name</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>aditya</td><td>cavisson</td><td>new_netstorm_test2</td><td>default</td><td>default</td><td>Group1</td><td>Group2</td><td>hpd_tours</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test2, project_name=default, sub_project_name=default, groupname=Group1, groupname2=Group2, script_name=hpd_tours}</h3>
+<div class="step successful">Given a chrometest with testcaseName <span class="step parameter">firstTest</span></div>
+<div class="step successful">And open Netstorm ProductUI for <span class="step parameter">http://10.10.30.106</span></div>
+<div class="step successful">When login with username <span class="step parameter">aditya</span> and password <span class="step parameter">cavisson</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">aditya</span> for element <span class="step parameter">userNameTextBox</span> - <span class="step parameter">EnterUserName</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">cavisson</span> for element <span class="step parameter">userPasswordTextBox</span> - <span class="step parameter">EnterUserPass</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then submit element <span class="step parameter">loginButton</span> - <span class="step parameter">ClickLoginButton</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then home page login name should be <span class="step parameter">aditya</span></div>
+<div class="step successful">Then assert text <span class="step parameter">aditya</span> for element <span class="step parameter">loginUserNameLabel</span> - <span class="step parameter">CheckUserName</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">Given create a scenario with name <span class="step parameter">new_netstorm_test2</span> project <span class="step parameter">default</span> subproject <span class="step parameter">default</span></div>
+<div class="step successful">Then click element <span class="step parameter">totalScenariosCard</span> - <span class="step parameter">ClickTotalScenario</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">Then click element <span class="step parameter">createScenario</span> - <span class="step parameter">ClickCreateScenario</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element <span class="step parameter">projectSelector</span> - <span class="step parameter">ClickProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element projectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">subProjectSelector</span> - <span class="step parameter">ClickSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then click element subProjectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">new_netstorm_test2</span> for element <span class="step parameter">scenarioNameTextBox</span> - <span class="step parameter">EnterScenarioName</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then submit element <span class="step parameter">createScenarioNextBtn</span> - <span class="step parameter">ClickOnNextForCreateScenario</span> - <span class="step parameter">CreateScenarioCard</span></div>
+<div class="step successful">Then add group with groupname <span class="step parameter">Group1</span> , script <span class="step parameter">hpd_tours</span> , project <span class="step parameter">default</span> , subproject <span class="step parameter">default</span></div>
+<div class="step successful">Then click element <span class="step parameter">addGroupButton</span> - <span class="step parameter">ClickToAddGroup</span> - <span class="step parameter">ScenarioUiPage</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">Group1</span> for element <span class="step parameter">groupNameTextBox</span> - <span class="step parameter">EnterGroupName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptTypeRadioButton</span> - <span class="step parameter">ClickToSelectScriptType</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">userProfileDropDown</span> - <span class="step parameter">ClickUserProfileDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">internetUserProfile-Internet</span> - <span class="step parameter">SelectUserprofileFromDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptProjectSelector</span> - <span class="step parameter">ClickSelectProjectDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptProjectName-<span class="step parameter">default</span> - <span class="step parameter">ClickProjectNameFromDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptSubProjectSelector</span> - <span class="step parameter">ClickSubProjectDropdown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptSubProjectName-<span class="step parameter">default</span> - <span class="step parameter">ClickSubProjectNameFromDropdown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptDropDownList</span> - <span class="step parameter">ClickScriptDropdownList</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">Group1</span> for element <span class="step parameter">scriptSearchBox</span> - <span class="step parameter">EnterScriptName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptNameSelect-<span class="step parameter">hpd_tours</span> - <span class="step parameter">ClickScriptName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">groupAddOkBtn</span> - <span class="step parameter">ClickAddGroupButton</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then add group with groupname <span class="step parameter">Group2</span> , script <span class="step parameter">hpd_tours</span> , project <span class="step parameter">default</span> , subproject <span class="step parameter">default</span></div>
+<div class="step successful">Then click element <span class="step parameter">addGroupButton</span> - <span class="step parameter">ClickToAddGroup</span> - <span class="step parameter">ScenarioUiPage</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">Group1</span> for element <span class="step parameter">groupNameTextBox</span> - <span class="step parameter">EnterGroupName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptTypeRadioButton</span> - <span class="step parameter">ClickToSelectScriptType</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">userProfileDropDown</span> - <span class="step parameter">ClickUserProfileDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">internetUserProfile-Internet</span> - <span class="step parameter">SelectUserprofileFromDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptProjectSelector</span> - <span class="step parameter">ClickSelectProjectDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptProjectName-<span class="step parameter">default</span> - <span class="step parameter">ClickProjectNameFromDropDown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptSubProjectSelector</span> - <span class="step parameter">ClickSubProjectDropdown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptSubProjectName-<span class="step parameter">default</span> - <span class="step parameter">ClickSubProjectNameFromDropdown</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">scriptDropDownList</span> - <span class="step parameter">ClickScriptDropdownList</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">Group1</span> for element <span class="step parameter">scriptSearchBox</span> - <span class="step parameter">EnterScriptName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element scriptNameSelect-<span class="step parameter">hpd_tours</span> - <span class="step parameter">ClickScriptName</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step successful">Then click element <span class="step parameter">groupAddOkBtn</span> - <span class="step parameter">ClickAddGroupButton</span> - <span class="step parameter">GroupAddCard</span></div>
+<div class="step pending">And save the scenario <span class="keyword pending">(PENDING)</span></div>
+<div class="step pending">And move to TotalScenarios UI <span class="keyword pending">(PENDING)</span></div>
+<div class="step notPerformed">Then quit chrometest <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div><pre class="pending">@Then(&quot;save the scenario&quot;)
+@Pending
+public void thenSaveTheScenario() {
+  // PENDING
+}
+</pre></div>
+<div><pre class="pending">@Then(&quot;move to TotalScenarios UI&quot;)
+@Pending
+public void thenMoveToTotalScenariosUI() {
+  // PENDING
+}
+</pre></div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,52 @@
+<div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('AddKeyValue').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 class="w3-text w3-large">Add New Key Value Pair</h2>
+      </header>
+      <div class="w3-container">
+        <table class="w3-table">
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>
+              <select class="w3-select" name="optionKeys" id="key-options">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="using">using</option>
+                  <option value="value">value</option>
+                  <option value="pattern">pattern</option>
+                  <option value="parameterized">parameterized</option>
+              </select>
+            </td>
+            <td>
+              <select class="w3-select w3-hide" name="select-param" id="param-options">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="true">True</option>
+                <option value="false" selected>False</option>
+              </select>
+                <select class="w3-select" name="optionXpath" id="using-options">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="id" selected>Id</option>
+                  <option value="xpath" selected>XPath</option>
+                  <option value="name">Name</option>
+                  <option value="className">ClassName</option>
+                  <option value="cssSelector">CssSelector</option>
+              </select>
+              
+              <input id="input-option" class="w3-input w3-border w3-round we-hide" name="edit-text" type="text" value="{{el_value}}" style="width:100%">
+            </td>
+            <td>
+              <div class="w3-right-align w3-button">
+                <i class="fa fa-trash"></i>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+

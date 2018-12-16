@@ -11,3 +11,13 @@ Then click element subProjectSelectorSelect-<sub_project_name> - SelectSubProjec
 Then sendkeys <scenario_name> for element scenarioNameTextBox - EnterScenarioName - CreateScenarioCard
 Then submit element createScenarioNextBtn - ClickOnNextForCreateScenario - CreateScenarioCard
 
+Composite: Then open total scenarios UI
+Then click element totalScenariosCard - ClickTotalScenario - Home
+
+Composite: Then delete scenario <scenario_name>
+Then sendkeys <scenario_name> for element searchScenarioBox - EnterScenarioNameToSearch - TotalScenariosPage
+Then click element applyButton - ClickApplyToSearch - TotalScenariosPage
+Then click element scenarioCheckBox-<scenario_name> - SelectScenarioToDelete - TotalScenariosPage
+Then click element deleteScenario - DeleteSelectedScenario - TotalScenariosPage
+
+

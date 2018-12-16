@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var curent_page;
+function myAccFunc(pagename) {
+    var x = document.getElementById(pagename+"Container");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+        $.ajax({
+        type: "POST",
+        url: "/elements",
+        data: "pagename="+pagename,
+        cache: false,
+        success: function(data){
+        curent_page=pagename;
+        //console.log(data)
+        $("#"+pagename+"Container").html(function(i, origText){
+      return data; 
+    });
+  }
+});
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+function myElFunc(elementname){
+  document.getElementById('ElementPanel').style.display='block';
+  $.ajax({
+        type: "POST",
+        url: "/elementinfo",
+        data: "pagename="+curent_page+"&elementname="+elementname,
+        cache: false,
+        success: function(data){
+        console.log(data)  
+        $("#elementInfo").html(function(i, origText){
+      return data; 
+    });
+        $("#ElementPanelHeader").html(function(i, origText){
+      return elementname; 
+    });
+  }
+});
+}
+
+$(document).on('change', '#key-options', function(){
+    var val=document.getElementById('key-options').value
+    elementAddClearAll();
+    if(val == 'using'){
+      document.getElementById('using-options').className += " w3-show";
+    }
+    if(val == 'value'){
+      document.getElementById('input-option').className += " w3-show";
+    }
+    if(val == 'pattern'){
+      document.getElementById('input-option').className += " w3-show";
+    }
+    if(val == 'parameterized'){
+      document.getElementById('param-options').className += " w3-show";
+    }
+});
+
+function elementAddClearAll(){
+  var selectUsing = document.getElementById('using-options')
+  var selectParam = document.getElementById('param-options')
+  var input = document.getElementById('input-option')
+  input.className=input.className.replace('w3-show','');
+  selectParam.className=selectParam.className.replace('w3-show','');
+  selectUsing.className=selectUsing.className.replace('w3-show','');
+}
+</script>
+
+  
+
+</head>
+<body>  
+
+<div class="w3-bar w3-light-blue">
+  <h1 class="w3-xxxlarge"><span class="w3-text-white"><b><i>CAVISSON</i></b></span></h1>
+</div>
+
+
+<div class="w3-sidebar w3-bar-block w3-grey w3-card">
+  {% for page in page_list  %}
+  <div id="{{page}}" class="w3-bar-item w3-button" onclick="myAccFunc('{{page}}')"> {{page}} <i class="fa fa-caret-down"></i></div>
+  <div id="{{page}}Container" class="w3-hide w3-white w3-card-4">
+    
+  </div>
+  {% endfor %}
+</div>
+
+
+<div class="w3-container" style="margin-left:160px">
+<h2>Sidebar Accordion</h2>
+<p>In this example, we have added an accordion and a dropdown menu inside the side navigation.</p>
+<p>Click on both to understand how they differ from each other. The accordion will push down the content, while the dropdown lays over the content.</p>
+</div>
+<div id="ElementPanel" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ElementPanel').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 id="ElementPanelHeader" class="w3-text w3-large">{{elementname}}</h2>
+      </header>
+      <div class="w3-container">
+        <table id="elementInfo" class="w3-table">
+        </table>
+        <button class="w3-right w3-button"><i onClick="document.getElementById('AddKeyValue').style.display='block'" class="fa fa-plus"></i>
+        </button>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+</div>
+
+<div id="AddKeyValue" class="w3-modal">
+  <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('AddKeyValue').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 class="w3-text w3-large">Add New Key Value Pair</h2>
+      </header>
+      <div class="w3-container">
+        <table class="w3-table">
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>
+              <select class="w3-select" name="optionKeys" id="key-options">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="using">using</option>
+                  <option value="value">value</option>
+                  <option value="pattern">pattern</option>
+                  <option value="parameterized">parameterized</option>
+              </select>
+            </td>
+            <td>
+              <select class="w3-select w3-hide" name="select-param" id="param-options">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="true">True</option>
+                <option value="false" selected>False</option>
+              </select>
+                <select class="w3-select w3-hide w3-show" name="optionXpath" id="using-options">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="id">Id</option>
+                  <option value="xpath">XPath</option>
+                  <option value="name">Name</option>
+                  <option value="className">ClassName</option>
+                  <option value="cssSelector">CssSelector</option>
+              </select>
+              
+              <input id="input-option" class="w3-input w3-border w3-round w3-hide" name="edit-text" type="text" value="{{el_value}}" style="width:100%">
+            </td>
+          </tr>
+        </table>
+        <div class="w3-right w3-button">
+          <i class="fa fa-save"></i>
+        </div>
+      </div>
+      <footer class="w3-container w3-row w3-teal">
+        <p class="w3-left">Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>

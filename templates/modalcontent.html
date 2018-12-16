@@ -1,0 +1,50 @@
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+          {% for el_key,el_value in element_info.iteritems() %}
+          <tr>
+            <td>
+              <select class="w3-select" name="optionKeys">
+                  <option value="" disabled selected>Choose your option</option>
+                  {% for key in key_list %}
+                  {% if key == el_key %}
+                  <option value="{{key}}" selected>{{key}}</option>
+                  {%else %}
+                  <option value="{{key}}">{{key}}</option>
+                  {% endif %}
+                  {% endfor %}
+              </select>
+            </td>
+            <td>
+              {% if el_key == 'parameterized' %}
+              <select class="w3-select" name="select-param" id="select-param">
+                <option value="" disabled>Choose your option</option>
+                {% if el_value == 'true' %}
+                <option value="true" selected>True</option>
+                <option value="false">False</option>
+                {% elif el_value == 'false' %}
+                <option value="true">True</option>
+                <option value="false" selected>False</option>
+                {%else%}
+                <option value="true">{{el_value}}</option>
+                <option value="false">{{el_value}}</option>
+                {% endif %}
+              </select>
+              {% elif el_key == 'using'%}
+                <select class="w3-select" name="optionXpath">
+                  <option value="" disabled selected>Choose your option</option>
+                  {% for using in using_list %}
+                  {% if using == el_value %}
+                  <option value="{{using}}" selected>{{using}}</option>
+                  {%else %}
+                  <option value="{{using}}">{{using}}</option>
+                  {% endif %}
+                  {% endfor %}
+              </select>
+              {% else %}
+              <input class="w3-input w3-border w3-round" name="edit-text" type="text" value="{{el_value}}" style="width:100%">
+              {% endif %}
+            </td>
+            
+          {% endfor %}

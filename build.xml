@@ -49,11 +49,11 @@
 		<sequential>
 			<echo>@{changedFile}</echo>
 			<xmlproperty file="./controls/xml/@{changedFile}.xml"  keepRoot="true" collapseAttributes="true"/>
-			<echoproperties destfile="my.properties"  regex="Application"/>
 			<!--<echoproperties  prefix="@{changedFile}"/>-->
 			<!--<replace file="./src/POM/@{changedFile}.java" replacefilterfile="my.properties"/>-->
   		</sequential>
 	</for>
+	<echoproperties destfile="my.properties"  regex="Application"/>
 	<javac srcdir="src" destdir="classes" debug="true" includeantruntime="false">
 		<classpath refid="cav.classpath"/>
 	</javac>

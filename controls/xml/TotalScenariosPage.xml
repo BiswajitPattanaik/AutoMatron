@@ -8,7 +8,7 @@
     </deleteScenario>
     <applyButton using="xpath" value="//div[@class='sectionButton']//*[text()='Apply']/parent::button">
     </applyButton>
-    <scenarioCheckBox value="//a/span[text()='%s']/ancestor::td/preceding-sibling::td[@class='ui-selection-column']/p-dtcheckbox/div/div[contains(@class,'ui-chkbox-box')]">
+    <scenarioCheckBox using="xpath" value="//a/span[text()='%s']/ancestor::td/preceding-sibling::td[@class='ui-selection-column']/p-dtcheckbox/div/div[contains(@class,'ui-chkbox-box')]" parameterized="true" pattern="%s">
     </scenarioCheckBox>
   </TotalScenariosPage>
 </Application>

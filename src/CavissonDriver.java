@@ -240,7 +240,7 @@ public class CavissonDriver
     			captureScreenShot(driver);
     			System.out.println("Completed capture screenshot");
     			System.out.println("Secondary wait started");
-                	wait = new WebDriverWait(driver, 60);
+                	wait = new WebDriverWait(driver, 10);
                 	//wait.until(ExpectedConditions.stalenessOf(element));
                 	wait.until(new ExpectedCondition<Boolean>(){
 			    @Override
@@ -249,7 +249,8 @@ public class CavissonDriver
 				    System.out.println("Inside ThirdWait");
                                     return !element.isEnabled();
                                 }catch(NoSuchElementException e){return true;}
-                                catch(Exception e){return false;}
+                                catch(StaleElementReferenceException e){return true;}
+                                catch(Exception e){e.printStackTrace();return false;}
                             }
 
                         });

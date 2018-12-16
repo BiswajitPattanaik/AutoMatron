@@ -1,9 +1,9 @@
 Testsuite: com.cavisson.biswajit.ChromeTestStory
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 93.528 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.546 sec
 ------------- Standard Output ---------------
 Inside the log
-The test property for testcase is SimpleCreateScenario
-./testcases/SimpleCreateScenario/test_case.conf
+The test property for testcase is SimpleCreateScenario2Groups
+./testcases/SimpleCreateScenario2Groups/test_case.conf
 The test property for Story StoryFile is chrome_test_login.story
 ./controls/Models.txt
 ************** Found A Composite file ************
@@ -12,12 +12,13 @@ The test property for Story StoryFile is chrome_test_login.story
 ##### ./controls/steps/Home.step ########
 ##### ./controls/steps/TotalScenariosPage.step ########
 ##### ./controls/steps/CreateScenarioCard.step ########
+************** Found A Composite file ************
 ##### ./controls/steps/ScenarioUiPage.step ########
 ##### ./controls/steps/GroupAddCard.step ########
-[./controls/steps/Login.step, ./controls/steps/Home.step]
+[./controls/steps/Login.step, ./controls/steps/Home.step, ./controls/steps/ScenarioUiPage.step]
 Inside the log
-The test property for testcase is SimpleCreateScenario
-./testcases/SimpleCreateScenario/test_case.conf
+The test property for testcase is SimpleCreateScenario2Groups
+./testcases/SimpleCreateScenario2Groups/test_case.conf
 The test property for Story StoryFile is chrome_test_login.story
 ./controls/Models.txt
 ************** Found A Composite file ************
@@ -26,17 +27,18 @@ The test property for Story StoryFile is chrome_test_login.story
 ##### ./controls/steps/Home.step ########
 ##### ./controls/steps/TotalScenariosPage.step ########
 ##### ./controls/steps/CreateScenarioCard.step ########
+************** Found A Composite file ************
 ##### ./controls/steps/ScenarioUiPage.step ########
 ##### ./controls/steps/GroupAddCard.step ########
-[./controls/steps/Login.step, ./controls/steps/Home.step]
+[./controls/steps/Login.step, ./controls/steps/Home.step, ./controls/steps/ScenarioUiPage.step]
 Processing system properties {}
 Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeouts=600,threads=1,failOnStoryTimeout=false]
 
 (BeforeStories)
 
-Running story ./testcases/SimpleCreateScenario/chrome_test_login.story
+Running story ./testcases/SimpleCreateScenario2Groups/chrome_test_login.story
 
-(./testcases/SimpleCreateScenario/chrome_test_login.story)
+(./testcases/SimpleCreateScenario2Groups/chrome_test_login.story)
 Scenario: 
 Examples:
 Given a chrometest with testcaseName firstTest
@@ -44,12 +46,16 @@ And open Netstorm ProductUI for http://10.10.30.106
 When login with username <username> and password <userpass>
 Then home page login name should be <username>
 Given create a scenario with name <scenario_name> project <project_name> subproject <sub_project_name>
+Then add group with groupname <groupname> , script <script_name> , project <project_name> , subproject <sub_project_name>
+Then add group with groupname <groupname2> , script <script_name> , project <project_name> , subproject <sub_project_name>
+And save the scenario
+And move to TotalScenarios UI
 Then quit chrometest
 
-|username|userpass|scenario_name|project_name|sub_project_name|groupname|script_name|
-|aditya|cavisson|new_netstorm_test1|default|default|Group1|hpd_tours|
+|username|userpass|scenario_name|project_name|sub_project_name|groupname|groupname2|script_name|
+|aditya|cavisson|new_netstorm_test2|default|default|Group1|Group2|hpd_tours|
 
-Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test1, project_name=default, sub_project_name=default, groupname=Group1, script_name=hpd_tours}
+Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test2, project_name=default, sub_project_name=default, groupname=Group1, groupname2=Group2, script_name=hpd_tours}
 test case name = firstTest
 The test 4j property for executableBinary is /opt/google/chrome/google-chrome
 The test 4j property for baseDir is /home/netstorm/biswajit/AutomaTron
@@ -59,8 +65,10 @@ Using timeout for story chrome_test_login.story of 600 secs.
 Given a chrometest with testcaseName firstTest
 And open Netstorm ProductUI for http://10.10.30.106
 When login with username aditya and password cavisson
+Element using is Application.Login.userNameTextBox.using
  No Parameterized value found in scenario hence continueing as usual 
 Then sendkeys aditya for element userNameTextBox - EnterUserName - Login
+Element using is Application.Login.userPasswordTextBox.using
  No Parameterized value found in scenario hence continueing as usual 
 Then sendkeys cavisson for element userPasswordTextBox - EnterUserPass - Login
  No Parameterized value found in scenario hence continueing as usual 
@@ -76,13 +84,17 @@ Then home page login name should be aditya
  No Parameterized value found in scenario hence continueing as usual 
 Inside assert aditya
 Then assert text aditya for element loginUserNameLabel - CheckUserName - Home
-Given create a scenario with name new_netstorm_test1 project default subproject default
+Given create a scenario with name new_netstorm_test2 project default subproject default
+Element using is Application.Home.totalScenariosCard.using
  No Parameterized value found in scenario hence continueing as usual 
 Then click element totalScenariosCard - ClickTotalScenario - Home
+Element using is Application.TotalScenariosPage.createScenario.using
  No Parameterized value found in scenario hence continueing as usual 
 Then click element createScenario - ClickCreateScenario - TotalScenariosPage
+Element using is Application.CreateScenarioCard.projectSelector.using
  No Parameterized value found in scenario hence continueing as usual 
 Then click element projectSelector - ClickProjectDropDown - CreateScenarioCard
+Element using is Application.CreateScenarioCard.projectSelectorSelect.using
  Parameterized value found in the PropertyValue 
 Pattern Matching success
 2
@@ -90,8 +102,10 @@ Pattern Matching success
 Inside For Loop Tokenizer //div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']
 [ DEBUG ] ResultString //div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default'] [DEBUG]
 Then click element projectSelectorSelect-default - SelectProjectDropDown - CreateScenarioCard
+Element using is Application.CreateScenarioCard.subProjectSelector.using
  No Parameterized value found in scenario hence continueing as usual 
 Then click element subProjectSelector - ClickSubProjectDropDown - CreateScenarioCard
+Element using is Application.CreateScenarioCard.subProjectSelectorSelect.using
  Parameterized value found in the PropertyValue 
 Pattern Matching success
 2
@@ -99,8 +113,9 @@ Pattern Matching success
 Inside For Loop Tokenizer //div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']
 [ DEBUG ] ResultString //div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default'] [DEBUG]
 Then click element subProjectSelectorSelect-default - SelectSubProjectDropDown - CreateScenarioCard
+Element using is Application.CreateScenarioCard.scenarioNameTextBox.using
  No Parameterized value found in scenario hence continueing as usual 
-Then sendkeys new_netstorm_test1 for element scenarioNameTextBox - EnterScenarioName - CreateScenarioCard
+Then sendkeys new_netstorm_test2 for element scenarioNameTextBox - EnterScenarioName - CreateScenarioCard
  No Parameterized value found in scenario hence continueing as usual 
 Initial wait started
 Initial wait is over
@@ -108,126 +123,143 @@ going to capture screenshot
 Completed capture screenshot
 Secondary wait started
 Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-Inside ThirdWait
-inside last wait
-inside last wait done
-going to capture screenshot
-going to capture screenshot done
+Secondary wait Completed
 Then submit element createScenarioNextBtn - ClickOnNextForCreateScenario - CreateScenarioCard
-Then quit chrometest
+Then add group with groupname Group1 , script hpd_tours , project default , subproject default
+Element using is Application.ScenarioUiPage.addGroupButton.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element addGroupButton - ClickToAddGroup - ScenarioUiPage
+Element using is Application.GroupAddCard.groupNameTextBox.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then sendkeys Group1 for element groupNameTextBox - EnterGroupName - GroupAddCard
+Element using is Application.GroupAddCard.scriptTypeRadioButton.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptTypeRadioButton - ClickToSelectScriptType - GroupAddCard
+Element using is Application.GroupAddCard.userProfileDropDown.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element userProfileDropDown - ClickUserProfileDropDown - GroupAddCard
+Element using is Application.GroupAddCard.internetUserProfile.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet'] [DEBUG]
+Then click element internetUserProfile-Internet - SelectUserprofileFromDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptProjectSelector.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptProjectSelector - ClickSelectProjectDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptProjectName.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default'] [DEBUG]
+Then click element scriptProjectName-default - ClickProjectNameFromDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptSubProjectSelector.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptSubProjectSelector - ClickSubProjectDropdown - GroupAddCard
+Element using is Application.GroupAddCard.scriptSubProjectName.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default'] [DEBUG]
+Then click element scriptSubProjectName-default - ClickSubProjectNameFromDropdown - GroupAddCard
+Element using is Application.GroupAddCard.scriptDropDownList.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptDropDownList - ClickScriptDropdownList - GroupAddCard
+Element using is Application.GroupAddCard.scriptSearchBox.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then sendkeys Group1 for element scriptSearchBox - EnterScriptName - GroupAddCard
+Element using is Application.GroupAddCard.scriptNameSelect.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours'] [DEBUG]
+Then click element scriptNameSelect-hpd_tours - ClickScriptName - GroupAddCard
+Element using is Application.GroupAddCard.groupAddOkBtn.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element groupAddOkBtn - ClickAddGroupButton - GroupAddCard
+Then add group with groupname Group2 , script hpd_tours , project default , subproject default
+Element using is Application.ScenarioUiPage.addGroupButton.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element addGroupButton - ClickToAddGroup - ScenarioUiPage
+Element using is Application.GroupAddCard.groupNameTextBox.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then sendkeys Group1 for element groupNameTextBox - EnterGroupName - GroupAddCard
+Element using is Application.GroupAddCard.scriptTypeRadioButton.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptTypeRadioButton - ClickToSelectScriptType - GroupAddCard
+Element using is Application.GroupAddCard.userProfileDropDown.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element userProfileDropDown - ClickUserProfileDropDown - GroupAddCard
+Element using is Application.GroupAddCard.internetUserProfile.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet'] [DEBUG]
+Then click element internetUserProfile-Internet - SelectUserprofileFromDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptProjectSelector.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptProjectSelector - ClickSelectProjectDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptProjectName.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default'] [DEBUG]
+Then click element scriptProjectName-default - ClickProjectNameFromDropDown - GroupAddCard
+Element using is Application.GroupAddCard.scriptSubProjectSelector.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptSubProjectSelector - ClickSubProjectDropdown - GroupAddCard
+Element using is Application.GroupAddCard.scriptSubProjectName.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default'] [DEBUG]
+Then click element scriptSubProjectName-default - ClickSubProjectNameFromDropdown - GroupAddCard
+Element using is Application.GroupAddCard.scriptDropDownList.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element scriptDropDownList - ClickScriptDropdownList - GroupAddCard
+Element using is Application.GroupAddCard.scriptSearchBox.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then sendkeys Group1 for element scriptSearchBox - EnterScriptName - GroupAddCard
+Element using is Application.GroupAddCard.scriptNameSelect.using
+ Parameterized value found in the PropertyValue 
+Pattern Matching success
+2
+1
+Inside For Loop Tokenizer //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']
+[ DEBUG ] ResultString //div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours'] [DEBUG]
+Then click element scriptNameSelect-hpd_tours - ClickScriptName - GroupAddCard
+Element using is Application.GroupAddCard.groupAddOkBtn.using
+ No Parameterized value found in scenario hence continueing as usual 
+Then click element groupAddOkBtn - ClickAddGroupButton - GroupAddCard
+And save the scenario (PENDING)
+And move to TotalScenarios UI (PENDING)
+Then quit chrometest (NOT PERFORMED)
+@Then("save the scenario")
+@Pending
+public void thenSaveTheScenario() {
+  // PENDING
+}
+
+@Then("move to TotalScenarios UI")
+@Pending
+public void thenMoveToTotalScenariosUI() {
+  // PENDING
+}
+
 
 
 
@@ -238,15 +270,15 @@ Generating reports view to '/home/netstorm/biswajit/AutomaTron/target/jbehave-re
 Reports view generated with 4 stories (of which 2 pending) containing 3 scenarios (of which 2 pending)
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
-Dec 06, 2018 7:37:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+Dec 15, 2018 5:15:20 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 Starting ChromeDriver 2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d) on port 1024
 Only local connections are allowed.
 log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Dec 06, 2018 7:37:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 15, 2018 5:15:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ------------- ---------------- ---------------
 
-Testcase: run took 93.373 sec
+Testcase: run took 73.377 sec

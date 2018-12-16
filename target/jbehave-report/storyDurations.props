@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Thu Dec 06 19:38:59 IST 2018
-./testcases/SimpleCreateScenario/chrome_test_login.story=92000
+#Sat Dec 15 17:16:32 IST 2018
 threads=1
-total=92000
-threadAverage=92000
+total=71000
+threadAverage=71000
+./testcases/SimpleCreateScenario2Groups/chrome_test_login.story=71000

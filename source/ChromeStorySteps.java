@@ -57,12 +57,14 @@ public class ChromeStorySteps {
     }
     @Then("sendkeys $text for element $element - $casename - $pagename")
     public void sendKeys(@Named("text") String text , @Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
-	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			        
+	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");
+	System.out.println("Element using is "+ ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using"); 
 	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  
 	driver.sendKeys(locateElement(using,value),text,caseName); 
     }
     @Then("click element $element - $casename - $pagename")
     public void click(@Named("element") String element, @Named("casename")String caseName,@Named("pagename") String pageName){
+	System.out.println("Element using is "+ ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");
 	String using = p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "using");  			       
 	String value = checkString(p.getProperty(ROOT_TAG + "." + pageName + "." + element.split("-")[0] + "." + "value"),element,pageName);  
 	driver.click(locateElement(using,value),caseName); 
@@ -226,6 +228,9 @@ public class ChromeStorySteps {
         capabilities.setCapability("acceptInsecureCerts", true);
         ChromeOptions options = new ChromeOptions();
         options.setBinary(chromeBinaryPath);
+	
+	//Need To configure out headless flag from test_case.conf
+
         if(headlessFlag){
             options.addArguments("--headless");
             options.addArguments("--disable-gpu");

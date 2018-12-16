@@ -1,0 +1,15 @@
+Composite: Then add group with groupname $groupname , script $script_name , project $project_name , subproject $sub_project_name
+Then click element addGroupButton - ClickToAddGroup - ScenarioUiPage
+Then sendkeys <groupname> for element groupNameTextBox - EnterGroupName - GroupAddCard
+Then click element scriptTypeRadioButton - ClickToSelectScriptType - GroupAddCard
+Then click element userProfileDropDown - ClickUserProfileDropDown - GroupAddCard 
+Then click element internetUserProfile-Internet - SelectUserprofileFromDropDown - GroupAddCard
+Then click element scriptProjectSelector - ClickSelectProjectDropDown - GroupAddCard
+Then click element scriptProjectName-<project_name> - ClickProjectNameFromDropDown - GroupAddCard
+Then click element scriptSubProjectSelector - ClickSubProjectDropdown - GroupAddCard
+Then click element scriptSubProjectName-<sub_project_name> - ClickSubProjectNameFromDropdown - GroupAddCard
+Then click element scriptDropDownList - ClickScriptDropdownList - GroupAddCard
+Then sendkeys <groupname> for element scriptSearchBox - EnterScriptName - GroupAddCard
+Then click element scriptNameSelect-<script_name> - ClickScriptName - GroupAddCard
+Then click element groupAddOkBtn - ClickAddGroupButton - GroupAddCard
+ 

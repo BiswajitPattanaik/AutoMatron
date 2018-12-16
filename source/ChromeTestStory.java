@@ -35,6 +35,9 @@ public class ChromeTestStory extends JUnitStories {
     private final static String MODEL_LIST = "Models.txt";
     private String testCaseName;
     private String testStoryName;
+
+//Inject Steps for StoryTimeOut
+
     @Override 
     public Configuration configuration() { System.out.println("Inside the log");
         Properties p = new Properties();
@@ -84,15 +87,23 @@ public class ChromeTestStory extends JUnitStories {
         return null;
     }
 
+//Inject Steps for StoryHandling
+
     @Override
     public InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new ChromeStorySteps());   
         //return new InstanceStepsFactory(configuration(), new StackBehaviourSteps());   
     }
+
+//Set StoryTimeOut Value By adding custom storyTimeOut to Embedder
+
     public EmbedderControls createEmbedderControls() {
         return new EmbedderControls()
                 .useStoryTimeoutInSecs(600L); //temporarily ensure timeouts are not an issue
     }
+
+//Configure Embedder to Override StoryTimeOut of 300 Seconds To 600 Seconds TO::DO StoryTimeOut Needs to be 5 Minute by default and should be configured from test_case.con file.
+
     @Override
     public Embedder configuredEmbedder() {
     	// TODO Auto-generated method stub
@@ -100,6 +111,9 @@ public class ChromeTestStory extends JUnitStories {
     	emb.useEmbedderControls(createEmbedderControls());
     	return emb;
     }
+
+//Get StoryFilePath from TestCase Directory
+    
     @Override
     protected List<String> storyPaths() {
 	// TODO Auto-generated method stub
@@ -107,6 +121,9 @@ public class ChromeTestStory extends JUnitStories {
 	arr.add("./" + TEST_CASE_DIR + "/" + testCaseName + "/" + testStoryName);
 	return arr;
     }
+
+
+//Get the List Of all Composite File Path from "Controls/steps" Structure
     private List<String> getCompositeFilePath(){
         ArrayList<String> arr = new ArrayList<String>(); 
         try{

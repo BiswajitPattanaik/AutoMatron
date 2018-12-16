@@ -27,31 +27,13 @@
 <tbody>
 <tr>
 <td>aditya</td><td>cavisson</td><td>new_netstorm_test1</td><td>default</td><td>default</td><td>Group1</td><td>hpd_tours</td></tr>
+<tr>
+<td>aditya</td><td>cavisson</td><td>new_netstorm_test2</td><td>default</td><td>default</td><td>Group1</td><td>hpd_tours</td></tr>
 </tbody>
 </table>
 
 <h3 class="example">Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test1, project_name=default, sub_project_name=default, groupname=Group1, script_name=hpd_tours}</h3>
 <div class="step successful">Given a chrometest with testcaseName <span class="step parameter">firstTest</span></div>
-<div class="step successful">And open Netstorm ProductUI for <span class="step parameter">http://10.10.30.106</span></div>
-<div class="step successful">When login with username <span class="step parameter">aditya</span> and password <span class="step parameter">cavisson</span></div>
-<div class="step successful">Then sendkeys <span class="step parameter">aditya</span> for element <span class="step parameter">userNameTextBox</span> - <span class="step parameter">EnterUserName</span> - <span class="step parameter">Login</span></div>
-<div class="step successful">Then sendkeys <span class="step parameter">cavisson</span> for element <span class="step parameter">userPasswordTextBox</span> - <span class="step parameter">EnterUserPass</span> - <span class="step parameter">Login</span></div>
-<div class="step successful">Then submit element <span class="step parameter">loginButton</span> - <span class="step parameter">ClickLoginButton</span> - <span class="step parameter">Login</span></div>
-<div class="step successful">Then home page login name should be <span class="step parameter">aditya</span></div>
-<div class="step successful">Then assert text <span class="step parameter">aditya</span> for element <span class="step parameter">loginUserNameLabel</span> - <span class="step parameter">CheckUserName</span> - <span class="step parameter">Home</span></div>
-<div class="step successful">Given create a scenario with name <span class="step parameter">new_netstorm_test1</span> project <span class="step parameter">default</span> subproject <span class="step parameter">default</span></div>
-<div class="step successful">Then click element <span class="step parameter">totalScenariosCard</span> - <span class="step parameter">ClickTotalScenario</span> - <span class="step parameter">Home</span></div>
-<div class="step successful">Then click element <span class="step parameter">createScenario</span> - <span class="step parameter">ClickCreateScenario</span> - <span class="step parameter">TotalScenariosPage</span></div>
-<div class="step successful">Then click element <span class="step parameter">projectSelector</span> - <span class="step parameter">ClickProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then click element projectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then click element <span class="step parameter">subProjectSelector</span> - <span class="step parameter">ClickSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then click element subProjectSelectorSelect-<span class="step parameter">default</span> - <span class="step parameter">SelectSubProjectDropDown</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then sendkeys <span class="step parameter">new_netstorm_test1</span> for element <span class="step parameter">scenarioNameTextBox</span> - <span class="step parameter">EnterScenarioName</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then submit element <span class="step parameter">createScenarioNextBtn</span> - <span class="step parameter">ClickOnNextForCreateScenario</span> - <span class="step parameter">CreateScenarioCard</span></div>
-<div class="step successful">Then quit chrometest</div>
-</div>
-</div>
-</div>
 
 </body>
 <!--  SyntaxHighlighter resources:  should be included at end of body -->

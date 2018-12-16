@@ -1,0 +1,65 @@
+<div class="story">
+<h1></h1>
+<div class="path">./testcases/SimpleDeleteScenario/chrome_test_login.story</div>
+<div class="scenario">
+<h2>Scenario: </h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a chrometest with testcaseName firstTest</div>
+<div class="step">And open Netstorm ProductUI for http://10.10.30.106</div>
+<div class="step">When login with username &lt;username&gt; and password &lt;userpass&gt;</div>
+<div class="step">Then home page login name should be &lt;username&gt;</div>
+<div class="step">Then open total scenarios UI</div>
+<div class="step">And delete scenario &lt;scenario_name&gt;</div>
+<div class="step">Then quit chrometest</div>
+<table>
+<thead>
+<tr>
+<th>username</th><th>userpass</th><th>scenario_name</th><th>project_name</th><th>sub_project_name</th><th>groupname</th><th>script_name</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>aditya</td><td>cavisson</td><td>new_netstorm_test1</td><td>default</td><td>default</td><td>Group1</td><td>hpd_tours</td></tr>
+<tr>
+<td>aditya</td><td>cavisson</td><td>new_netstorm_test2</td><td>default</td><td>default</td><td>Group1</td><td>hpd_tours</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test1, project_name=default, sub_project_name=default, groupname=Group1, script_name=hpd_tours}</h3>
+<div class="step successful">Given a chrometest with testcaseName <span class="step parameter">firstTest</span></div>
+<div class="step successful">And open Netstorm ProductUI for <span class="step parameter">http://10.10.30.106</span></div>
+<div class="step successful">When login with username <span class="step parameter">aditya</span> and password <span class="step parameter">cavisson</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">aditya</span> for element <span class="step parameter">userNameTextBox</span> - <span class="step parameter">EnterUserName</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">cavisson</span> for element <span class="step parameter">userPasswordTextBox</span> - <span class="step parameter">EnterUserPass</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then submit element <span class="step parameter">loginButton</span> - <span class="step parameter">ClickLoginButton</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then home page login name should be <span class="step parameter">aditya</span></div>
+<div class="step successful">Then assert text <span class="step parameter">aditya</span> for element <span class="step parameter">loginUserNameLabel</span> - <span class="step parameter">CheckUserName</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">Then open total scenarios UI</div>
+<div class="step successful">Then click element <span class="step parameter">totalScenariosCard</span> - <span class="step parameter">ClickTotalScenario</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">And delete scenario <span class="step parameter">new_netstorm_test1</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">new_netstorm_test1</span> for element <span class="step parameter">searchScenarioBox</span> - <span class="step parameter">EnterScenarioNameToSearch</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element <span class="step parameter">applyButton</span> - <span class="step parameter">ClickApplyToSearch</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element scenarioCheckBox-<span class="step parameter">new_netstorm_test1</span> - <span class="step parameter">SelectScenarioToDelete</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element <span class="step parameter">deleteScenario</span> - <span class="step parameter">DeleteSelectedScenario</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then quit chrometest</div>
+
+<h3 class="example">Example: {username=aditya, userpass=cavisson, scenario_name=new_netstorm_test2, project_name=default, sub_project_name=default, groupname=Group1, script_name=hpd_tours}</h3>
+<div class="step successful">Given a chrometest with testcaseName <span class="step parameter">firstTest</span></div>
+<div class="step successful">And open Netstorm ProductUI for <span class="step parameter">http://10.10.30.106</span></div>
+<div class="step successful">When login with username <span class="step parameter">aditya</span> and password <span class="step parameter">cavisson</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">aditya</span> for element <span class="step parameter">userNameTextBox</span> - <span class="step parameter">EnterUserName</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">cavisson</span> for element <span class="step parameter">userPasswordTextBox</span> - <span class="step parameter">EnterUserPass</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then submit element <span class="step parameter">loginButton</span> - <span class="step parameter">ClickLoginButton</span> - <span class="step parameter">Login</span></div>
+<div class="step successful">Then home page login name should be <span class="step parameter">aditya</span></div>
+<div class="step successful">Then assert text <span class="step parameter">aditya</span> for element <span class="step parameter">loginUserNameLabel</span> - <span class="step parameter">CheckUserName</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">Then open total scenarios UI</div>
+<div class="step successful">Then click element <span class="step parameter">totalScenariosCard</span> - <span class="step parameter">ClickTotalScenario</span> - <span class="step parameter">Home</span></div>
+<div class="step successful">And delete scenario <span class="step parameter">new_netstorm_test2</span></div>
+<div class="step successful">Then sendkeys <span class="step parameter">new_netstorm_test2</span> for element <span class="step parameter">searchScenarioBox</span> - <span class="step parameter">EnterScenarioNameToSearch</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element <span class="step parameter">applyButton</span> - <span class="step parameter">ClickApplyToSearch</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element scenarioCheckBox-<span class="step parameter">new_netstorm_test2</span> - <span class="step parameter">SelectScenarioToDelete</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then click element <span class="step parameter">deleteScenario</span> - <span class="step parameter">DeleteSelectedScenario</span> - <span class="step parameter">TotalScenariosPage</span></div>
+<div class="step successful">Then quit chrometest</div>
+</div>
+</div>
+</div>
