@@ -77,6 +77,31 @@ function elementAddClearAll(){
   selectParam.className=selectParam.className.replace('w3-show','');
   selectUsing.className=selectUsing.className.replace('w3-show','');
 }
+
+function openElementForEditing(keyId,valueId){
+  key=document.getElementById(keyId).innerHTML;
+  val=document.getElementById(valueId).innerHTML;
+  document.getElementById('AddKeyValue').style.display='block';
+  document.getElementById('key-options').value=key;
+  elementAddClearAll();
+    if(key == 'using'){
+      document.getElementById('using-options').className += " w3-show";
+      document.getElementById('using-options').value=val;
+    }
+    if(key == 'value'){
+      document.getElementById('input-option').className += " w3-show";
+      document.getElementById('input-option').value=val;
+    }
+    if(key == 'pattern'){
+      document.getElementById('input-option').className += " w3-show";
+      document.getElementById('input-option').value=val;
+    }
+    if(key == 'parameterized'){
+      document.getElementById('param-options').className += " w3-show";
+      document.getElementById('param-options').value=val;
+    }
+
+}
 </script>
 
   
@@ -112,7 +137,7 @@ function elementAddClearAll(){
         <h2 id="ElementPanelHeader" class="w3-text w3-large">{{elementname}}</h2>
       </header>
       <div class="w3-container">
-        <table id="elementInfo" class="w3-table">
+        <table id="elementInfo" class="w3-table-all w3-hoverable">
         </table>
         <button class="w3-right w3-button"><i onClick="document.getElementById('AddKeyValue').style.display='block'" class="fa fa-plus"></i>
         </button>
@@ -166,7 +191,7 @@ function elementAddClearAll(){
           </tr>
         </table>
         <div class="w3-right w3-button">
-          <i class="fa fa-save"></i>
+          <i onClick="alert('Hello! I am an alert box!!');"class="fa fa-save"></i>
         </div>
       </div>
       <footer class="w3-container w3-row w3-teal">
